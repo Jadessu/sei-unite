@@ -10,6 +10,7 @@ urlpatterns = [
     path('projects/<int:pk>/update/', views.ProjectUpdate.as_view(), name='projects_update'),
     path('projects/<int:pk>/delete/', views.ProjectDelete.as_view(), name='projects_delete'),
     # ------------------------------------ALUMNI------------------------------------------------------
-    path('alumnus/', views.alumnus_index, name='alumnus_index')
+    path('alumnus/', views.alumnus_index, name='alumnus_index'),
+    path('alumnus/<int:alumnus_id>/', views.alumnus_detail, name='alumnus_detail'),
 
 ]

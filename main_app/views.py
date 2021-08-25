@@ -17,6 +17,10 @@ def about(request):
 def alumnus_index(request):
     alumnus = Alumnus.objects.all()
     return render(request, 'alumnus/index.html', {'alumnus': alumnus})
+
+def alumnus_detail(request, alumnus_id):
+    alumnus = Alumnus.objects.get(id=alumnus_id)
+    return render(request, 'alumnus/detail.html', {'alumnus': alumnus})
 # ------------------------------------PROJECTS----------------------------------------------------------
 def projects_index(request):
     projects = Project.objects.all()
