@@ -23,6 +23,7 @@
   <nav>
     <div class="logo">SEI-UNITE</div>
     <ul>
+    {% if user.is_authenticated %}
     <li><a href="{% url 'home' %}">Home</a></li>
     <li>
     <a href="#">Projects
@@ -46,6 +47,13 @@
     </li>
     <li><a href="#">Project Ideas</a></li>
     <li><a href="{% url 'about' %}">About Us</a></li>
+    <li><a href="{% url 'logout' %}">Log out</a></li>
+    {% else %}
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="#">Project Ideas</a></li>
+
+{% endif%}
 
     
     </ul>
