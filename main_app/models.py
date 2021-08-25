@@ -8,3 +8,6 @@ class Project(models.Model):
     lookingfor = models.TextField(max_length=400)
     repo = models.TextField(max_length=150)
     completed = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.title
