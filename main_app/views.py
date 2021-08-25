@@ -55,6 +55,10 @@ class ProjectCreate(CreateView):
     fields = '__all__'
     success_url = '/projects/'
 
+    def form_valid(self, form):
+        form.instance.alumnus = self.request.alumnus
+        return super().form_valid(form)
+
 class ProjectUpdate(UpdateView):
     model = Project
     fields = ['completed', 'image', 'lookingfor']

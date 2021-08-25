@@ -33,6 +33,8 @@
         <li><a href="{% url 'projects_create' %}">Add Project</a></li>
 
         <li><a href="{% url 'projects_index' %}">View Projects</a></li>
+
+        <li><a href="#">My Projects</a></li>
     </ul>
     </li>
     <li>
@@ -49,9 +51,10 @@
     <li><a href="{% url 'about' %}">About Us</a></li>
     <li><a href="{% url 'logout' %}">Log out</a></li>
     {% else %}
-        <li><a href="{% url 'about' %}">About Us</a></li>
         <li><a href="{% url 'home' %}">Home</a></li>
         <li><a href="#">Project Ideas</a></li>
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'signup' %}">Sign Up</a></li>
 
 {% endif%}
 
