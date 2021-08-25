@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Project
+from django.urls import reverse
 from django.views.generic.edit import CreateView
 
 # Create your views here.
@@ -22,3 +23,4 @@ def projects_detail(request, project_id):
 class ProjectCreate(CreateView):
     model = Project
     fields = '__all__'
+    success_url = '/projects/'
