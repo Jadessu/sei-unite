@@ -15,6 +15,7 @@ urlpatterns = [
     path('alumnus/create/', views.AlumnusCreate.as_view(), name='alumnus_create'),
     path('alumnus/<int:pk>/update/', views.AlumnusUpdate.as_view(), name='alumnus_update'),
     path('alumnus/<int:pk>/delete/', views.AlumnusDelete.as_view(), name='alumnus_delete'),
-
+    # ------------------------------------USERS------------------------------------------------------------
+    path('accounts/signup/', views.signup, name='signup')
 
 ]
