@@ -13,5 +13,8 @@ urlpatterns = [
     path('alumnus/', views.alumnus_index, name='alumnus_index'),
     path('alumnus/<int:alumnus_id>/', views.alumnus_detail, name='alumnus_detail'),
     path('alumnus/create/', views.AlumnusCreate.as_view(), name='alumnus_create'),
+    path('alumnus/<int:pk>/update/', views.AlumnusUpdate.as_view(), name='alumnus_update'),
+    path('alumnus/<int:pk>/delete/', views.AlumnusDelete.as_view(), name='alumnus_delete'),
+
 
 ]
