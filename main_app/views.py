@@ -28,6 +28,10 @@ class AlumnusCreate(CreateView):
     fields = '__all__'
     success_url = '/alumnus/'
 
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super().form_valid(form)
+
 class AlumnusUpdate(UpdateView):
     model = Alumnus
     fields = '__all__'
