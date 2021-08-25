@@ -20,6 +20,10 @@
     <h2>{{project.repo}}</h2>
     
   </div>
+  <div class="project-actions">
+      <a href="{% url 'projects_update' project.id %}" class="btn warn">Edit</a>
+      <a href="{% url 'projects_delete' project.id %}" class="btn danger">Delete</a>
+    </div>
 </section>
 
 {% endblock %}
