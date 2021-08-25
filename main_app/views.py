@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from .models import Project, Alumnus
 from django.urls import reverse
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.views.generic import ListView, DetailView
 
 
 # Create your views here.
@@ -17,6 +18,8 @@ class AlumnusCreate(CreateView):
     model = Alumnus
     fields = '__all__'
 
+class AlumnusList(ListView):
+    model = Alumnus
 # ------------------------------------PROJECTS----------------------------------------------------------
 def projects_index(request):
     projects = Project.objects.all()

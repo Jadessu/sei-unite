@@ -12,7 +12,7 @@ urlpatterns = [
     # ------------------------------------ALUMNI------------------------------------------------------
     path('alumnus/create/', views.AlumnusCreate.as_view(), name='alumnus_create'),
     path('alumnus', views.AlumnusList.as_view(), name='alumnus_index'),
-    path('alumnus/<int:pk>/', views.AlumnusDetail.as_view(), name='alumnus_detail')
+    path('alumnus/<int:pk>/', views.AlumnusDetail.as_view(), name='alumnus_detail'),
 
 
 ]
