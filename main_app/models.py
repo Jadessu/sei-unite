@@ -17,7 +17,7 @@ class Project(models.Model):
     lookingfor = models.TextField(max_length=400)
     repo = models.TextField(max_length=150)
     completed = models.BooleanField(default=False)
-    # alumnus = models.ForeignKey(Alumnus, on_delete=models.CASCADE)
+    alumnus = models.ForeignKey(Alumnus, on_delete=models.CASCADE)
 
 
     def __str__(self):
