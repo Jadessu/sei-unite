@@ -1,3 +1,122 @@
-body {
-    background-color: red;
-  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: white;
+}
+
+nav{
+    background-color: #1b1b1b;
+    color: white;
+}
+
+
+nav .logo{
+    float: left;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 4.37rem ;
+    padding-left: 6rem;
+    
+}
+
+nav:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    /* margin-right: 40px; */
+    position: relative;
+    padding-right: 6rem;
+}
+
+nav li{
+    position: relative;
+}
+
+nav ul li{
+    float: left;
+    display: inline-block;
+    background-color: #1b1b1b;
+
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 3rem;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    box-shadow: 0 0 5px #33ffff;
+    border-radius: 5px;
+    color: cyan;
+}
+
+nav a::before {
+content: "";
+display: block;
+height: 5px;
+width: 0%;
+background-color: cyan;
+position: absolute;
+top: 0;
+transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+
+}
+nav ul ul li a:hover{
+    color: cyan;
+    box-shadow: none;
+    
+
+}
+nav ul ul{
+    position: absolute;
+    top: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+    border-top: 3px solid cyan;
+}
+
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    top: 3.02rem;
+}
+
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 9.3rem;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul ul li a {
+    line-height: 40px;
+    font-size: 0.8rem;
+}
+
+main{
+    padding: 0 5rem;
+    
+}

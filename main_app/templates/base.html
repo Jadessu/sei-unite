@@ -12,24 +12,32 @@
     href=""
   >
   <title>SEI-Unite</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
   {% block head %}
-  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
   {% endblock %}
 </head>
 <body>
+<header>
   <nav>
-    <div class="log">SEI-UNITE</div>
+    <div class="logo">SEI-UNITE</div>
     <ul>
     <li><a href="#">Home</a></li>
     <li>
-    <a href="#">Projects</a>
+    <a href="#">Projects
+    <span> <i class="fas fa-caret-down"></i> </span>
+    </a>
     <ul>
         <li><a href="#">Add Project</a></li>
         <li><a href="#">View Projects</a></li>
     </ul>
     </li>
     <li>
-    <a href="#">Alumni</a>
+    <a href="#">Alumni
+    <span> <i class="fas fa-caret-down"></i> </span>
+    </a>
+    
     <ul>
         <li><a href="#">View Alumni</a></li>
         <li><a href="#">Add Alumnus</a></li>
@@ -41,6 +49,7 @@
     
     </ul>
   </nav>
+  </header>
   <main>
     {% block content %}
     {% endblock %}
