@@ -21,6 +21,11 @@ def alumnus_index(request):
 def alumnus_detail(request, alumnus_id):
     alumnus = Alumnus.objects.get(id=alumnus_id)
     return render(request, 'alumnus/detail.html', {'alumnus': alumnus})
+
+class AlumnusCreate(CreateView):
+    model = Alumnus
+    fields = '__all__'
+    success_url = '/alumnus/'
 # ------------------------------------PROJECTS----------------------------------------------------------
 def projects_index(request):
     projects = Project.objects.all()
