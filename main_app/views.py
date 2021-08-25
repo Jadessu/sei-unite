@@ -30,8 +30,11 @@ class AlumnusCreate(CreateView):
 class AlumnusUpdate(UpdateView):
     model = Alumnus
     fields = '__all__'
+    success_url = '/alumnus/'
 
-
+class AlumnusDelete(DeleteView):
+    model = Alumnus
+    success_url = '/alumnus/'
 # ------------------------------------PROJECTS----------------------------------------------------------
 def projects_index(request):
     projects = Project.objects.all()
