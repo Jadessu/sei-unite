@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/alumnus-index.css' %}"/>
+{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+  <h1>Our alumni</h1>
+  
+</section>
+
+<section class="card-container">
+  {% for person in alumnus %}
+   
+   <h1>{{person.name}}</h1>
+  {% endfor %}
+</section>
+
+{% endblock %}

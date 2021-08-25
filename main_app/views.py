@@ -14,15 +14,9 @@ def about(request):
     return render(request, 'about.html')
 
 # ------------------------------------ALUMNUS---------------------------------------------------------
-class AlumnusCreate(CreateView):
-    model = Alumnus
-    fields = '__all__'
-
-class AlumnusList(ListView):
-    model = Alumnus
-
-class AlumnusDetail(DeleteView):
-    model = Alumnus
+def alumnus_index(request):
+    alumnus = Alumnus.objects.all()
+    return render(request, 'alumnus/index.html', {'alumnus': alumnus})
 # ------------------------------------PROJECTS----------------------------------------------------------
 def projects_index(request):
     projects = Project.objects.all()
