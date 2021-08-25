@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Project
+from .models import Project, Alumnus
 from django.urls import reverse
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
@@ -12,7 +12,12 @@ def home(request):
 def about(request):
     return render(request, 'about.html')
 
+# ------------------------------------ALUMNUS---------------------------------------------------------
+class AlumnusCreate(CreateView):
+    model = Alumnus
+    fields = '__all__'
 
+# ------------------------------------PROJECTS----------------------------------------------------------
 def projects_index(request):
     projects = Project.objects.all()
     return render(request, 'projects/index.html', {'projects': projects})
@@ -35,3 +40,4 @@ class ProjectUpdate(UpdateView):
 class ProjectDelete(DeleteView):
     model = Project
     success_url = '/projects/'
+
