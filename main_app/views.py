@@ -20,6 +20,9 @@ class AlumnusCreate(CreateView):
 
 class AlumnusList(ListView):
     model = Alumnus
+
+class AlumnusDetail(DeleteView):
+    model = Alumnus
 # ------------------------------------PROJECTS----------------------------------------------------------
 def projects_index(request):
     projects = Project.objects.all()
