@@ -29,6 +29,7 @@ class ProjectCreate(CreateView):
 class ProjectUpdate(UpdateView):
     model = Project
     fields = ['completed', 'image', 'lookingfor']
+    success_url = '/projects/'
    
 
 class ProjectDelete(DeleteView):
