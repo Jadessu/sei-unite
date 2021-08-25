@@ -26,7 +26,10 @@ class ProjectCreate(CreateView):
     fields = '__all__'
     success_url = '/projects/'
 
-    
+class ProjectUpdate(UpdateView):
+    model = Project
+    fields = ['completed', 'image', 'lookingfor']
+   
 
 class ProjectDelete(DeleteView):
     model = Project
