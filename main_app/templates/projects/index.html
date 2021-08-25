@@ -12,7 +12,25 @@
 </section>
 
 <section class="card-container">
+<a href="/projects/{{project.id}}">
+ {%for project in projects%}
+ <img src="{{project.image}}" style="width: 200px"alt="">
+ <h1>{{project.title}}</h1>
+ <p>{{project.description}}</p>
+ <p>{{project.lookingFor}}</p>
+ <h3>{{project.repo}}</h3>
  
+ {% if project.completed %}
+ <h2>This project is completed</h2>
+ {% else %}
+ <h2>This project is not completed</h2>
+ {% endif %}
+ </a>
+
+
+
+
+ {% endfor%}
 </section>
 
 {% endblock %}
