@@ -29,8 +29,9 @@
     <span> <i class="fas fa-caret-down"></i> </span>
     </a>
     <ul>
-        <li><a href="#">Add Project</a></li>
-        <li><a href="/projects">View Projects</a></li>
+        <li><a href="{% url 'project_create' %}">Add Project</a></li>
+
+        <li><a href="{% url 'projects_index' %}">View Projects</a></li>
     </ul>
     </li>
     <li>
@@ -44,7 +45,7 @@
     </ul>
     </li>
     <li><a href="#">Project Ideas</a></li>
-    <li><a href="#">About Us</a></li>
+    <li><a href="{% url 'about' %}">About Us</a></li>
 
     
     </ul>
