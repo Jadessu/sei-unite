@@ -12,5 +12,6 @@ urlpatterns = [
     # ------------------------------------ALUMNI------------------------------------------------------
     path('alumnus/', views.alumnus_index, name='alumnus_index'),
     path('alumnus/<int:alumnus_id>/', views.alumnus_detail, name='alumnus_detail'),
+    path('alumnus/create/', views.AlumnusCreate.as_view(), name='alumnus_create'),
 
 ]
