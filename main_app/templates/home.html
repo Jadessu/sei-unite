@@ -11,7 +11,7 @@
   <h1>WELCOME HOME</h1>
 </section>
 
-{% comment %} {% if not user.is_authenticated %} {% endcomment %}
+{% if not user.is_authenticated %}
   <section>
     <form action="{% url 'home' %}" method="post" class="login">
       <h1>Login</h1>
@@ -21,6 +21,6 @@
       <button type="submit" class="btn submit">Login</button>
     </form>
   </section>
-{% comment %} {% endif %} {% endcomment %}
+{% endif %}
 
 {% endblock %}
