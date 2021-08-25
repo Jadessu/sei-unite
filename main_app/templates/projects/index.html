@@ -13,8 +13,9 @@
 
 <section class="card-container">
 {% comment %} <a href="{%url 'projects_detail' project.id %}"> </a> {% endcomment %}
-<a href="/projects/{{project.id}}">  View Details </a>
  {%for project in projects%}
+ <a href="/projects/{{project.id}}">  View Details </a>
+
  <img src="{{project.image}}" style="width: 200px"alt="">
  <h1>{{project.title}}</h1>
  <p>{{project.description}}</p>
