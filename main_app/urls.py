@@ -11,6 +11,7 @@ urlpatterns = [
     path('projects/<int:pk>/delete/', views.ProjectDelete.as_view(), name='projects_delete'),
     # ------------------------------------ALUMNI------------------------------------------------------
     path('alumnus/create/', views.AlumnusCreate.as_view(), name='alumnus_create'),
+    path('alumnus', views.AlumnusList.as_view(), name='alumnus_index')
 
 
 ]
