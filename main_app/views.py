@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Project
+from django.views.generic.edit import CreateView
 
 # Create your views here.
 def home(request):
@@ -17,3 +18,7 @@ def projects_index(request):
 def projects_detail(request, project_id):
     project = Project.objects.get(id=project_id)
     return render(request, 'projects/detail.html', {'project': project})
+
+class ProjectCreate(CreateView):
+    model = Project
+    fields = '__all__'
