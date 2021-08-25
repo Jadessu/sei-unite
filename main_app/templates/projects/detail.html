@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="{% static 'css/project-detail.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="project-container">
+  
+  </div>
+  <div class="project-details">
+    <h1>{{ project.title }}</h1>
+    <p>{{project.description}}</p>
+    <h2>{{project.repo}}</h2>
+    
+  </div>
+</section>
+
+{% endblock %}
