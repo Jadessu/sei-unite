@@ -26,6 +26,12 @@ class AlumnusCreate(CreateView):
     model = Alumnus
     fields = '__all__'
     success_url = '/alumnus/'
+
+class AlumnusUpdate(UpdateView):
+    model = Alumnus
+    fields = '__all__'
+
+
 # ------------------------------------PROJECTS----------------------------------------------------------
 def projects_index(request):
     projects = Project.objects.all()
