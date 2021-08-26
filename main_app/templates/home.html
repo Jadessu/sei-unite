@@ -7,20 +7,35 @@
 
 {% block content %}
 
-<section class="logo-container">
-  <h1>WELCOME HOME</h1>
-</section>
 
+
+<div class="home">
+  <div class="imgBx">
+<img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/little-asian-kid-fishing-in-the-river-countryside-thailand-somchai-sanvongchaiya.jpg" alt="">
+  </div>
+  <div class="contentBx">
+  <div class="formBx">
+  <h2>Login</h2>
 {% if not user.is_authenticated %}
-  <section>
+  
     <form action="{% url 'home' %}" method="post" class="login">
-      <h1>Login</h1>
+     
       {% csrf_token %}
+      <div class="inputBx">
       {{ form.as_p }}
+      </div>
       <input type="hidden" name="next" value="{{ next }}">
       <button type="submit" class="btn submit">Login</button>
     </form>
-  </section>
+ 
 {% endif %}
+<div class="inputBx">
+<p>Don't have an account? <a href="#">Sign Up</a></p>
+</div>
+  </div>
+  </div>
+</div>
+
+
 
 {% endblock %}

@@ -7,6 +7,10 @@
 
 body{
     background-color: white;
+    --submit: rgb(26, 128, 0);
+    --warn: rgb(255, 102, 0);
+    --danger: rgb(220, 20, 30);
+    --secondary: rgb(57, 57, 57);
 }
 
 nav{
@@ -120,3 +124,33 @@ main{
     padding: 0 5rem;
     
 }
+
+.btn {
+    font-size: var(--font-l);
+    padding: 8px 16px;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid;
+    text-decoration: none;
+    background-color: var(--button-bg);
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    margin-right: 10px;
+  }
+
+  .submit {
+    color: var(--submit);
+    border-color: var(--submit);
+  }
+  
+  .secondary {
+    color: var(--secondary);
+    border-color: var(--secondary);
+  }
+  
+  .warn {
+    color: var(--warn);
+    border-color: var(--warn);
+  }
+  
