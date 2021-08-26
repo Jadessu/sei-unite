@@ -1,3 +1,8 @@
+import environ
+env = environ.Env()
+environ.Env.read_env()
+
+
 """
 Django settings for seiunite project.
 

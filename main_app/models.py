@@ -3,6 +3,9 @@ from django.contrib.auth.models import User
 
 
 # Create your models here.
+
+
+
 class Alumnus(models.Model):
     github = models.CharField(max_length=100)
     name = models.CharField(max_length=100)
@@ -24,3 +27,10 @@ class Project(models.Model):
 
     def __str__(self):
         return self.title
+
+class Photo(models.Model):
+    url = models.CharField(max_length=250)
+    alumnus = models.OneToOneField(Alumnus, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"Photo for alumnus_id: {self.alumnus_id} @{self.url}"
