@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/project-index.css' %}"
+/>
+{% endblock %} {% block content %}
+
+<section class="page-header">
+<h1> YOUR <span>PROJECTS</span></h1>
+</section>
+
+<section class="project-container">
+  {%for project in projects%}
+  <a href="/projects/{{project.id}}">
+    <div class="project-container">
+      <div class="project">
+        <img src="{{project.image}}" alt="the project's title" style="height: 300px; width:100%" />
+        <div class="project-info">
+          <h3>{{project.title}}</h3>
+
+          <span>
+            {% if project.completed %}
+            <h2>Completed</h2>
+            {% else %}
+            <h2>Ongoing</h2>
+            {% endif %}
+          </span>
+        </div>
+
+        <div class="project-overview">
+          <h2>Project:</h2>
+          <p>{{project.description}}</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  {% endfor%}
+</section>
+
+{% endblock %}

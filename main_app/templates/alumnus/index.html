@@ -12,12 +12,29 @@
   
 </section>
 
-<section class="card-container">
-  {% for person in alumnus %}
-   <a href="/alumnus/{{person.id}}">View Detail</a>
-   <h1>{{person.name}}</h1>
-   <h2>{{person.github}}</h2>
-   <h3>{{person.linkedin}}</h3>
+<div className="title">
+    <h1> MEET THE TEAM </h1> 
+     </div>
+<section class="team-container">
+     {% for person in alumnus %}
+     <a href="/alumnus/{{person.id}}">View Detail</a>
+        <div class="card">
+            <div class="team-content">
+                <div class="image">
+                <img src="{% static 'img/teamwork.jpg' %}" alt="">
+
+                </div>
+                <div class="info">
+                    <h4>{{person.name}}</h4>
+                    <h5>Software Engineer</h5>
+                </div>
+                <div class="socials">
+                    <a href="{{person.linkedin}}" target = "_blank" rel="noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="{{person.github}}" target = "_blank" rel="noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
   {% endfor %}
 </section>
 

@@ -28,6 +28,7 @@ class AlumnusCreate(CreateView):
     model = Alumnus
     fields = '__all__'
     success_url = '/alumnus/'
+    
 
     def form_valid(self, form):
         form.instance.user = self.request.user
@@ -46,9 +47,11 @@ def projects_index(request):
     projects = Project.objects.all()
     return render(request, 'projects/index.html', {'projects': projects})
 
-# def my_projects(request):
-#     projects = Project.filter(alumnus=request.alumnus)
-#     return render(request, projects/myprojects.html, {'project': projects })
+def myprojects_index(request):
+    # projects = Project.filter(user=request.user)
+    alumnus = Alumnus.objects.get(user=request.user)
+    projects = alumnus.project_set.all()
+    return render(request, 'projects/myprojects_index.html', {'projects': projects })
 
 def projects_detail(request, project_id):
     project = Project.objects.get(id=project_id)
@@ -59,8 +62,11 @@ class ProjectCreate(CreateView):
     fields = '__all__'
     success_url = '/projects/'
 
+
     def form_valid(self, form):
-        form.instance.alumnus = self.request.alumnus
+        alumnus = Alumnus.objects.get(user=self.request.user)
+        print(self.request.user)
+        form.instance.alumnus = alumnus
         return super().form_valid(form)
 
 class ProjectUpdate(UpdateView):

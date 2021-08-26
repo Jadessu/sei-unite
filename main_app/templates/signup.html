@@ -2,24 +2,34 @@
 {% load static %}
 
 {% block head %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/>
 {% endblock %}
 
 {% block content %}
 
-<div class="page-header">
-  <h1>Sign Up</h1>
-<img src="" alt="">
-</div>
+
+<div class="home">
+  <div class="imgBx">
+<img src="{% static 'img/signup2.jpg' %}" alt="">
+  </div>
+  <div class="contentBx">
+  <div class="formBx">
+  <h2>Sign Up</h2>
+
 {% if error_message %}
   <p class="red-text">{{ error_message }}</p>
 {% endif %}
 <form action="" method="post" class="form-container" autocomplete="off">
   {% csrf_token %}
-  <table>
-    {{ form.as_table }}
-  </table>
-  <button type="submit" class="btn submit">Submit!</button>
-</form>
+  
+  <div class="inputBx">
+    {{ form.as_p }}
+    </div>
+  
+<div class="inputBx">
+<button type="submit" class="login-submit">Submit!</button></div>
+  </div>
+  </div>
+</div>
 
 {% endblock %}

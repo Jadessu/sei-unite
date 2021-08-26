@@ -11,7 +11,7 @@
 
 <div class="home">
   <div class="imgBx">
-<img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/little-asian-kid-fishing-in-the-river-countryside-thailand-somchai-sanvongchaiya.jpg" alt="">
+<img src="{% static 'img/teamwork.jpg' %}" alt="">
   </div>
   <div class="contentBx">
   <div class="formBx">
@@ -30,7 +30,7 @@
  
 {% endif %}
 <div class="inputBx">
-<p>Don't have an account? <a href="#">Sign Up</a></p>
+<p class="sign-up-link">Don't have an account? <a href="{% url 'signup' %}">Sign Up</a></p>
 </div>
   </div>
   </div>

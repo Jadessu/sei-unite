@@ -1,38 +1,41 @@
-{% extends 'base.html' %}
-{% load static %}
-
-{% block head %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/project-index.css' %}"/>
-{% endblock %}
-
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block head %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/project-index.css' %}"
+/>
+{% endblock %} {% block content %}
 
 <section class="page-header">
-  
+<h1> ALL CURRENT <span>PROJECTS</span></h1>
 </section>
 
-<section class="card-container">
-{% comment %} <a href="{%url 'projects_detail' project.id %}"> </a> {% endcomment %}
- {%for project in projects%}
- <a href="/projects/{{project.id}}">  View Details </a>
+<section class="project-container">
+  {%for project in projects%}
+  <a href="/projects/{{project.id}}">
+    <div class="project-container">
+      <div class="project">
+        <img src="{{project.image}}" alt="the project's title" style="height: 300px; width:100%" />
+        <div class="project-info">
+          <h3>{{project.title}}</h3>
 
- <img src="{{project.image}}" style="width: 200px"alt="">
- <h1>{{project.title}}</h1>
- <p>{{project.description}}</p>
- <p>{{project.lookingFor}}</p>
- <h3>{{project.repo}}</h3>
- 
- {% if project.completed %}
- <h2>This project is completed</h2>
- {% else %}
- <h2>This project is not completed</h2>
- {% endif %}
+          <span>
+            {% if project.completed %}
+            <h2>Completed</h2>
+            {% else %}
+            <h2>Ongoing</h2>
+            {% endif %}
+          </span>
+        </div>
 
-
-
-
-
- {% endfor%}
+        <div class="project-overview">
+          <h2>Project:</h2>
+          <p>{{project.description}}</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  {% endfor%}
 </section>
 
 {% endblock %}

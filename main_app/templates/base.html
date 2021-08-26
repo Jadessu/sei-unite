@@ -19,6 +19,9 @@
   {% endblock %}
 </head>
 <body>
+<div class = "bar">
+
+</div>
 <header>
   <nav>
     <div class="logo">SEI-UNITE</div>
@@ -34,7 +37,7 @@
 
         <li><a href="{% url 'projects_index' %}">View Projects</a></li>
 
-        <li><a href="#">My Projects</a></li>
+        <li><a href="{% url 'myprojects_index' %}">My Projects</a></li>
     </ul>
     </li>
     <li>

@@ -4,24 +4,43 @@
     box-sizing: border-box;
    
 }
+:root{
+    --dark-color: #0B0C10;
+    --light-dark: #1F2833;
+    --yellow-ish: #C5C6C7;
+    --blue-ish: #66FCF1;
+    --green-ish: #45A29E;
+}
+
 
 body{
-    background-color: white;
+    /* background-color: white; */
     --submit: rgb(26, 128, 0);
     --warn: rgb(255, 102, 0);
     --danger: rgb(220, 20, 30);
     --secondary: rgb(57, 57, 57);
 }
 
+.bar{
+    height: 2rem;
+    width: 100%;
+    background-color: white;
+}
+
+main{
+background-color: #BC6C25;
+    background-blend-mode: lighten;  
+ height: 100vh;
+}
+
 nav{
-    background-color: #1b1b1b;
-    color: white;
+    background-color: var(--dark-color)
 }
 
 
 nav .logo{
     float: left;
-    color: white;
+    color: var(--blue-ish);
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 4.37rem ;
@@ -50,13 +69,13 @@ nav li{
 nav ul li{
     float: left;
     display: inline-block;
-    background-color: #1b1b1b;
+    background-color: var(--dark-color);
 
     margin: 0 5px;
 }
 
 nav ul li a{
-    color: white;
+    color: var(--blue-ish);
     text-decoration: none;
     line-height: 3rem;
     font-size: 1.2rem;
