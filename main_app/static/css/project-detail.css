@@ -6,7 +6,7 @@
     background-color: #becbe0;
   }
   
-  .card {
+  .project {
     width: 800px;
     user-select: none;
     height: 820px;
@@ -17,18 +17,18 @@
     overflow: hidden;
   }
   
-  .card .card_header 
+  .project .project_header 
   {
     display: flex;
     justify-content: space-between;
     padding: 10px;
   }
-  .card .card_header h1 {
+  .project .project_header h1 {
     font-size: 22px;
     color: #0a253f;
   }
   
-  .card .card_header p {
+  .project .project_header p {
     font-size: 16px;
     padding: 10px 20px 0 0;
     color: #4a4970;
@@ -38,7 +38,7 @@
       max-width: 100%;
   }
   
-  .card .content-image .fa {
+  .project .content-image .fa {
     padding: 7px 10px;
     font-size: 25px;
     border-radius: 50px;
@@ -46,7 +46,7 @@
     background-color: #025aa5;
   }
   
-  .card_info {
+  .project_info {
       color: #0a253f;
       font-size: 14px;
       font-weight: 500;
@@ -54,15 +54,15 @@
      
   }
   
-  .card_info p{
+  .project_info p{
       margin:15px 10px;
   }
-  .card_info span{
+  .project_info span{
       color: #4a4970;
       margin-right: 10px;
   }
   
-  .card .card_footer{
+  .project .project_footer{
       padding: 10px 20px;
       align-items: center;
       background-color: #F0F4F7;
@@ -72,7 +72,7 @@
   
   }
   
-  .card .card_footer .btn{
+  .project .project_footer .btn{
       width: 100px;
       font-size: 16px;
       height: 30px;
@@ -85,6 +85,6 @@
       border-radius: 5px;
   }
   
-  .card_footer button span{
+  .project_footer button span{
       margin-left: 10px;
   }
