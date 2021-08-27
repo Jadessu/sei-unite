@@ -29,7 +29,7 @@
     </div>
 </section> {% endcomment %}
 {% comment %} 
-<section class = "card-container">
+<section class = "project-container">
 <div class="card">
 <div class="card_header">
 <div class="content">
@@ -54,8 +54,8 @@
 </section> {% endcomment %}
 
 <div class = "whole">
-<div class="card">
-            <div class="card_header">
+<div class="project">
+            <div class="project_header">
                <div class="content">
                 <h1>{{project.title}}</h1>
                 <p>
@@ -68,18 +68,20 @@
                 <span > <img src="{{project.image}}" alt=""></span>
             </div>
             </div>
-            <div class="card_info">
+            <div class="project_info">
                 <p><span <i class="fas fa-user-alt"></i></span>{{project.alumnus}}</p>
                 <p> <a href="{{project.repo}}">Github Repo</a></p>
             </div>
-            <div class="card_footer">
+            <div class="project_footer">
                 <span class="fa fa-star-o"></span>
                     {% comment %} <button class="btn">Start<span class="fa fa-long-arrow-right"></span></button> {% endcomment %}
             </div>
             <div class="help">
             <h1>Interested in this project?</h1>
-            <h2>If this sounds like you, please reach out to the alumnus <a href="/alumnus/{{alumnus.id}}">here</a></h2>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut maxime optio modi quo fugit eius hic, officia animi incidunt magni.
+            <h2>If you are interested, please reach out to the alumnus <a href="/alumnus/{{alumnus.id}}">here</a></h2>
+            <p>
+            {{project.lookingfor}}
+            </p>
             </div>
         </div>
         </div>

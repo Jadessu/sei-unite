@@ -51,7 +51,8 @@ class AlumnusDelete(DeleteView):
 # ------------------------------------PROJECTS----------------------------------------------------------
 def projects_index(request):
     projects = Project.objects.all()
-    return render(request, 'projects/index.html', {'projects': projects})
+    
+    return render(request, 'projects/index.html', {'projects': projects} )
 
 def myprojects_index(request):
     # projects = Project.filter(user=request.user)
@@ -60,6 +61,7 @@ def myprojects_index(request):
     return render(request, 'projects/myprojects_index.html', {'projects': projects }, {'alumnus': alumnus})
 
 def projects_detail(request, project_id):
+    alumnus = Alumnus.objects.get(user=request.user)
     project = Project.objects.get(id=project_id)
     return render(request, 'projects/detail.html', {'project': project})
 
