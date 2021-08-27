@@ -155,6 +155,10 @@ main{
    color: var(--white);
   }
 
+  .inputBx ul li{
+      display: none;
+  }
+
 
    @media (max-width: 768px)
    {
