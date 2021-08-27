@@ -5,6 +5,10 @@
     --blue-ish: #66FCF1;
     --green-ish: #45A29E;
     --white: whitesmoke;
+    --main:#0d2f7f;
+    --ascent: #cb9e85;
+    --white: #fff;
+    --button: #0863ce;
 }
 
 .page-header{
@@ -13,8 +17,10 @@
     align-items: center;
     text-align: center;
     color: var(--white);
-    padding-top: 2rem;
+    padding-top: 2rem;;
+    z-index: -2;
 }
+
 
 .page-header h1{
     font-size: 3rem;
@@ -25,7 +31,7 @@
 .page-header span{
     z-index: 1;
     position: relative;
-    color: var(--green-ish);
+    color: var(--ascent);
 }
 
 .page-header h1 span::after{
@@ -46,6 +52,7 @@
     justify-content: center;
     flex-direction: row;
     margin-top: 1rem;
+    
   }
 
   .project{
@@ -61,11 +68,12 @@
     border-radius: 3px;
     position: relative;
     overflow: hidden;
+    border-radius: 1rem;
   }
 
   .project-container a {
       text-decoration: none;
-      color:var(--blue-ish)
+      color:var(--white)
   }
 
   .project img{

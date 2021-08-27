@@ -26,7 +26,10 @@ body{
     --secondary: rgb(57, 57, 57);
     background-color: var(--main)
 }
-
+/* section{
+    
+    padding: 0 6rem;
+} */
 .bar{
     height: 2rem;
     width: 100%;
@@ -39,7 +42,8 @@ main{
 }
 
 nav{
-    color: var(--white)
+    color: var(--white);
+    z-index: 5
 }
 
 
@@ -101,7 +105,7 @@ width: 0%;
 background-color: cyan;
 position: absolute;
 top: 0;
-transition: all ease-in-out 300ms;
+transition: all ease-in-out 600ms;
 }
 
 nav a:hover::before{
@@ -111,6 +115,7 @@ nav a:hover::before{
 nav ul ul li a:hover{
     color: cyan;
     box-shadow: none;
+    
     
 
 }
@@ -136,6 +141,9 @@ nav ul ul li{
     float: none;
     display: list-item;
     border-bottom: 1px solid rgba(0,0,0,0.3);
+    background-color:#092669;
+    z-index: 100;
+    transition: all ease-in-out 200ms;
 }
 
 nav ul ul li a {
