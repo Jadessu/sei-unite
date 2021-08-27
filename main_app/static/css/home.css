@@ -159,6 +159,10 @@ main{
       display: none;
   }
 
+  .helptext{
+      opacity: 0.3
+  }
+
 
    @media (max-width: 768px)
    {
