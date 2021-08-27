@@ -20,6 +20,8 @@ urlpatterns = [
     path('alumnus/<int:pk>/update/', views.AlumnusUpdate.as_view(), name='alumnus_update'),
     path('alumnus/<int:pk>/delete/', views.AlumnusDelete.as_view(), name='alumnus_delete'),
     # ------------------------------------USERS------------------------------------------------------------
-    path('accounts/signup/', views.signup, name='signup')
+    path('accounts/signup/', views.signup, name='signup'),
+    # -----------------------------------PHOTO--------------------------------------------------------------
+    path('alumnus/<int:alumnus_id>/add_photo/', views.add_photo, name='add_photo')
 
 ]

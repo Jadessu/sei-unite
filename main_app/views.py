@@ -1,12 +1,18 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from .models import Project, Alumnus
+from .models import Project, Alumnus, Photo
 from django.urls import reverse
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic import ListView, DetailView
 from django.contrib.auth.views import LoginView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+import uuid
+import boto3
+
+S3_BASE_URL = "https://s3.us-west-1.amazonaws.com/"
+BUCKET = "sei-unite"
+
 
 # Create your views here.
 class Home(LoginView):
@@ -78,6 +84,24 @@ class ProjectUpdate(UpdateView):
 class ProjectDelete(DeleteView):
     model = Project
     success_url = '/projects/'
+
+# ----------------------------------------------PHOTO----------------------------------------------------
+def add_photo(request, alumnus_id):
+  photo_file = request.FILES.get('photo-file', None)
+  if photo_file:
+    s3 = boto3.client('s3')
+    key = uuid.uuid4().hex + photo_file.name[photo_file.name.rfind('.'):]
+    try:
+      s3.upload_fileobj(photo_file, BUCKET, key)
+      url = f"{S3_BASE_URL}{BUCKET}/{key}"
+      photo = Photo(url=url, alumnus_id=alumnus_id)
+      alumnus_photo = Photo.objects.filter(alumnus_id=alumnus_id)
+      if alumnus_photo.first():
+        alumnus_photo.first().delete()
+      photo.save()
+    except Exception as err:
+      print("An error occurred uploading the file to S3: %s" % err)
+  return redirect("alumnus_detail", alumnus_id=alumnus_id)
 # -----------------------------------------------USER------------------------------------------------------
 def signup(request):
   error_message = ""
