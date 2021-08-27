@@ -57,7 +57,7 @@ def myprojects_index(request):
     # projects = Project.filter(user=request.user)
     alumnus = Alumnus.objects.get(user=request.user)
     projects = alumnus.project_set.all()
-    return render(request, 'projects/myprojects_index.html', {'projects': projects })
+    return render(request, 'projects/myprojects_index.html', {'projects': projects }, {'alumnus': alumnus})
 
 def projects_detail(request, project_id):
     project = Project.objects.get(id=project_id)

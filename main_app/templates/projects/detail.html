@@ -11,19 +11,77 @@
 
 {% block content %}
 
-<section class="project-container">
+{% comment %} <section class="project-container">
   
   </div>
   <div class="project-details">
     <h1>{{ project.title }}</h1>
     <p>{{project.description}}</p>
     <h2>{{project.repo}}</h2>
-    
+    <h1>{{project.alumnus}}</h1>
+    <h1>{{project.completed}}</h1>
+    <p>{{project.lookingfor}}</p>
+    <img src="{{project.image}}" alt="" style="width:500px">
   </div>
   <div class="project-actions">
       <a href="{% url 'projects_update' project.id %}" class="btn warn">Edit</a>
       <a href="{% url 'projects_delete' project.id %}" class="btn danger">Delete</a>
     </div>
-</section>
+</section> {% endcomment %}
+{% comment %} 
+<section class = "card-container">
+<div class="card">
+<div class="card_header">
+<div class="content">
+<h1>{{project.title}}</h1>
+<p>{{project.description}}</p>
+
+</div>
+<section>
+<div class="content-image">
+<span class = "image"> <img src="{{project.image}}" alt=""></span>
+</div>
+</div>
+<div class="card-info">
+<p> <span>person logo</span>{{project.alumnus}}</p>
+<p>{{project.completed}}</p>
+</div>
+<div class="card_footer">
+<span> github logo</span>
+<button>View repo</button>
+</div>
+</div>
+</section> {% endcomment %}
+
+<div class = "whole">
+<div class="card">
+            <div class="card_header">
+               <div class="content">
+                <h1>{{project.title}}</h1>
+                <p>
+                    learn what is frontend developement and how its works
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ratione atque ut dolore dolorem doloribus facere, natus illo obcaecati totam. Deserunt aut impedit corporis eos unde minus suscipit consectetur maiores.
+                    {{project.description}}
+                </p>
+               </div>
+               <div class="content-image">
+                <span > <img src="{{project.image}}" alt=""></span>
+            </div>
+            </div>
+            <div class="card_info">
+                <p><span <i class="fas fa-user-alt"></i></span>{{project.alumnus}}</p>
+                <p> <a href="{{project.repo}}">Github Repo</a></p>
+            </div>
+            <div class="card_footer">
+                <span class="fa fa-star-o"></span>
+                    {% comment %} <button class="btn">Start<span class="fa fa-long-arrow-right"></span></button> {% endcomment %}
+            </div>
+            <div class="help">
+            <h1>Interested in this project?</h1>
+            <h2>If this sounds like you, please reach out to the alumnus <a href="/alumnus/{{alumnus.id}}">here</a></h2>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut maxime optio modi quo fugit eius hic, officia animi incidunt magni.
+            </div>
+        </div>
+        </div>
 
 {% endblock %}
