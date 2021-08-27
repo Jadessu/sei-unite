@@ -10,6 +10,11 @@
     --yellow-ish: #C5C6C7;
     --blue-ish: #66FCF1;
     --green-ish: #45A29E;
+
+    --main:#0d2f7f;
+    --ascent: #cb9e85;
+    --white: #fff;
+    --button: #0863ce;
 }
 
 
@@ -19,6 +24,7 @@ body{
     --warn: rgb(255, 102, 0);
     --danger: rgb(220, 20, 30);
     --secondary: rgb(57, 57, 57);
+    background-color: var(--main)
 }
 
 .bar{
@@ -28,19 +34,18 @@ body{
 }
 
 main{
-background-color: #BC6C25;
     background-blend-mode: lighten;  
  height: 100vh;
 }
 
 nav{
-    background-color: var(--dark-color)
+    color: var(--white)
 }
 
 
 nav .logo{
     float: left;
-    color: var(--blue-ish);
+    color: var(--white);
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 4.37rem ;
@@ -69,13 +74,12 @@ nav li{
 nav ul li{
     float: left;
     display: inline-block;
-    background-color: var(--dark-color);
 
     margin: 0 5px;
 }
 
 nav ul li a{
-    color: var(--blue-ish);
+    color: var(--white);
     text-decoration: none;
     line-height: 3rem;
     font-size: 1.2rem;

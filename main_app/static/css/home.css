@@ -11,10 +11,16 @@
     --yellow-ish: #C5C6C7;
     --blue-ish: #66FCF1;
     --green-ish: #45A29E;
+
+
+    --main:#0d2f7f;
+    --ascent: #cb9e85;
+    --white: #fff;
+    --button: #0863ce;
 }
 
 main{
-    background-color: var(--light-dark)
+    background-color: var(--main)
 }
   .home{
       position: relative;
@@ -38,7 +44,7 @@ main{
       left: 0;
       width: 100%;
       height: 100%;
-      background-color:rgb(17, 15, 13);
+      /* background-color:rgb(17, 15, 13); */
       z-index: 1;
       mix-blend-mode: screen;
   }
@@ -68,7 +74,7 @@ main{
   }
 
   .home .contentBx .formBx h2{
-      color: #607d8b;
+      color: var(--white);
       font-weight: 600;
       font-size: 1.5em;
       text-transform: uppercase;
@@ -116,8 +122,8 @@ main{
   }
 
    .login-submit{
-    background: var(--blue-ish);
-    color: rgb(13, 1, 20);
+    background: var(--button);
+    color: var(--white);
     outline: none;
     border: none;
     font-weight: 500;
@@ -125,14 +131,16 @@ main{
     font-size: 2rem;
     width: 100%;
     border-radius: 30px;
+    transition: all ease-in-out 350ms;
   }
 
   .login-submit:hover{
-      background: #fd558d;
+      background: #0a276b;
+      transform: scale(1.03)
   }
  
   .inputBx p{
-      color: #607d8b;
+      color: var(--ascent);
      
   }
 
@@ -140,10 +148,11 @@ main{
       margin-top: 10px;
       justify-content: center;
       text-align: center;
+      color: var(--ascent);
   }
 
   .inputBx p a{
-   color: var(--blue-ish);
+   color: var(--white);
   }
 
 
