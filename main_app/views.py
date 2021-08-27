@@ -10,7 +10,7 @@ from django.contrib.auth.forms import UserCreationForm
 import uuid
 import boto3
 
-S3_BASE_URL = "https://s3.us-west-1.amazonaws.com/"
+S3_BASE_URL = "https://s3.us-east-1.amazonaws.com/"
 BUCKET = "sei-unite"
 
 
