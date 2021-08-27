@@ -7,6 +7,9 @@
   type="text/css" 
   href="{% static 'css/alumnus-detail.css' %}"
 />
+
+<script defer src="{% static 'js/alumnus-detail.js' %}"></script>
+
 {% endblock %}
 
 {% block content %}
@@ -22,7 +25,7 @@
      <img src="{% static 'img/teamwork.jpg' %}" alt="" style="width:300px">
      {% endif%}
   </div>
-
+<div class="alumnus-actions">
   <h3>Change {{alumnus.name}}'s photo</h3>
   <p id = "file-name"></p>
   <form 
@@ -37,6 +40,7 @@
       </label>
       <button type="submit" class="btn submit">Upload Photo</button>
     </form>
+    </div>
   
 
 

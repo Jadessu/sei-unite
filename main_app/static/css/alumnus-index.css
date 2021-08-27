@@ -23,9 +23,9 @@
      height: 416px;
      padding: 60px 30px;
      margin: 20px;
-     background-color: #001a29;
+     /* background-color: #001a29;
      box-shadow: 0.6em 0.6em 0.5em #020d1b;
-     border-radius: 20px;
+     border-radius: 20px; */
   }
   
   .card .team-content
