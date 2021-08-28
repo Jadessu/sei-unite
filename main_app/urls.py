@@ -23,5 +23,7 @@ urlpatterns = [
     path('accounts/signup/', views.signup, name='signup'),
     # -----------------------------------PHOTO--------------------------------------------------------------
     path('alumnus/<int:alumnus_id>/add_photo/', views.add_photo, name='add_photo')
+    # ----------------------------------PROJECT IDEAS-----------------------------------------------------
+    path('projectideas/', views.project_ideas, name = 'project_ideas')
 
 ]
