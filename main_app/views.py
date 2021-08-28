@@ -21,6 +21,9 @@ class Home(LoginView):
 def about(request):
     return render(request, 'about.html')
 
+def projectideas(request):
+  return render(request, projectideas.html)
+
 # ------------------------------------ALUMNUS---------------------------------------------------------
 def alumnus_index(request):
     alumnus = Alumnus.objects.all()
