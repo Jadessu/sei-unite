@@ -76,12 +76,45 @@
                 <span class="fa fa-star-o"></span>
                     {% comment %} <button class="btn">Start<span class="fa fa-long-arrow-right"></span></button> {% endcomment %}
             </div>
+            {% if project.completed%}
             <div class="help">
-            <h1>Interested in this project?</h1>
-            <h2>If you are interested, please reach out to the alumnus <a href="/alumnus/{{alumnus.id}}">here</a></h2>
+            
+            <h1>HELP NEEDED:</h1>
+            
+            
+            <div class="help-info">
             <p>
             {{project.lookingfor}}
             </p>
+            <h2>If you are interested in being a part of this project, please reach out to <a href="/alumnus/{{alumnus.id}}"> {{project.alumnus}}</a></h2>
+            </div>
+            </div>
+            
+            {% else %}
+            <div class="help">
+            <h1> Unfortunately, this is a completed project.</h1>
+
+            <div class="help-info">
+            <h3>Previously, the owner needed help with the following:</h3>
+            <p>{{project.lookingfor}}</p>
+
+            <div class="suggestion">
+            <p>If you can think of any extra features that could improve this project, reach out to the owner and let them know!</p>
+            <div class="help-button">
+            <button>{{project.repo}}</button>
+            </div>
+            </div>
+            {% endif%}
+            <div class="lottie">
+            
+            </div>
+            </div>
+            <div>
+            
+            </div>
+            <div>
+            
+            </div>
             </div>
         </div>
         </div>

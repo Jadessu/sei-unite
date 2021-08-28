@@ -7,6 +7,12 @@
 
 {% block content %}
 
+
+
+
+<div class = form-section>
+
+<div class="form-holder">
 <div class="page-header">
 {% if object %}
 <h1>Edit {{object.name}}</h1>
@@ -15,15 +21,22 @@
   {% endif%}
 <img src="" alt="">
 </div>
-
 <form action="" method="post" class="form-container">
   
   {% csrf_token %}
-  <table>
-    
-    {{ form.as_table }}
-  </table>
-  <button type="submit" class="btn submit">Submit!</button>
+  {% comment %} <table> {% endcomment %}
+    <div class = "alumnus-form">
+    {{ form.as_p }}
+    </div>
+  {% comment %} </table> {% endcomment %}
+  <div class = "alumnus-button">
+  <button type="submit" class="btn-submit">Submit!</button>
+  </div>
 </form>
+</div>
+
+</div>
+
+
 
 {% endblock %}

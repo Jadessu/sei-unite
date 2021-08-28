@@ -1,9 +1,23 @@
+:root{
+    --dark-color: #0B0C10;
+    --light-dark: #1F2833;
+    --yellow-ish: #C5C6C7;
+    --blue-ish: #66FCF1;
+    --green-ish: #45A29E;
+
+    --main:#0d2f7f;
+    --ascent: #cb9e85;
+    --white: #fff;
+    --button: #0863ce;
+    --calm: #e8e3de;
+}
+
 .whole {
     
     align-items: center;
     display: flex;
     justify-content: center;
-    background-color: #becbe0;
+    background-color: var(--button);
   }
   
   .project {
@@ -11,7 +25,7 @@
     user-select: none;
     height: 820px;
     border: 2px solid rgba(255, 255, 255, 0.2);
-    background-color: #ffffff;
+    background-color: #c4c2df;
     border-radius: 5px;
     z-index: 1;
     overflow: hidden;
@@ -88,3 +102,25 @@
   .project_footer button span{
       margin-left: 10px;
   }
+
+  .help{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 6px;
+  }
+
+  .help-info{
+      margin-top: 1rem;
+  }
+
+  .help-info h2{
+margin-top: 2rem;
+border-top: 3px solid #025aa5;
+  }
+
+ input[type='checkbox' i]{
+     font-size: 2rem;
+ }

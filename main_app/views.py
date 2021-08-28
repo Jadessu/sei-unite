@@ -28,6 +28,7 @@ def alumnus_index(request):
 
 def alumnus_detail(request, alumnus_id):
     alumnus = Alumnus.objects.get(id=alumnus_id)
+    
     return render(request, 'alumnus/detail.html', {'alumnus': alumnus})
 
 class AlumnusCreate(CreateView):
@@ -58,7 +59,7 @@ def myprojects_index(request):
     # projects = Project.filter(user=request.user)
     alumnus = Alumnus.objects.get(user=request.user)
     projects = alumnus.project_set.all()
-    return render(request, 'projects/myprojects_index.html', {'projects': projects }, {'alumnus': alumnus})
+    return render(request, 'projects/myprojects_index.html', {'projects': projects })
 
 def projects_detail(request, project_id):
     alumnus = Alumnus.objects.get(user=request.user)

@@ -1,3 +1,16 @@
+:root{
+    --dark-color: #0B0C10;
+    --light-dark: #1F2833;
+    --yellow-ish: #C5C6C7;
+    --blue-ish: #66FCF1;
+    --green-ish: #45A29E;
+
+    --main:#0d2f7f;
+    --ascent: #cb9e85;
+    --white: #fff;
+    --button: #0863ce;
+}
+
 .usr-img {
     width: 100%;
   }
@@ -17,4 +30,62 @@
   
   #file-name {
     margin-bottom: 10px;
+  }
+
+  .alumnus-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--button);
+    margin-top: 2rem;
+    
+  }
+
+  .alumnus-img{
+    width: 400px;
+  }
+
+  .alumnus-img img{
+    max-width: 100%;
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white)
+  }
+
+  .alumnus-edit{
+    border-top: 1rem solid var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  .alumnus-actions{
+    margin-top: 1rem;
+  }
+
+  .alumnus-actions h3{
+    color: var(--white)
+  }
+
+  .alumnus-actions label{
+    color: rgb(209, 208, 223)
+  }
+
+  .alumnus-actions a{
+    color: var(--white);
+    text-decoration: none;
+    margin:3rem;
+    padding-top: 1rem;
+    font-size: 2rem;
   }

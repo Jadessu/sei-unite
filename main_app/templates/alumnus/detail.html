@@ -14,6 +14,11 @@
 
 {% block content %}
 
+{% if alumnus_id == self.request.user %}
+<div class="title">
+<h1> {{alumnus.name}}</h1>
+</div>
+
 <section class="alumnus-container">
   <div class="alumnus-img">
   {% if alumnus.photo.url %}
@@ -42,19 +47,24 @@
     </form>
     </div>
   
-
-
-
-
-  <h1>This is the detail page</h1>
-  <div class="alumnus-details">
-    <h1>{{ alumnus.name}}</h1>
-     <div class="cat-actions">
-      <a href="{% url 'alumnus_update' alumnus.id %}" class="btn warn">Edit</a>
-      <a href="{% url 'alumnus_delete' alumnus.id %}" class="btn danger">Delete</a>
-    </div>
     
   </div>
+  
 </section>
+  <div class="alumnus-edit">
+     <div class="alumnus-actions">
+      <a href="{% url 'alumnus_update' alumnus.id %}" class="btn warn"> <span><i class="fas fa-user-edit"></i></span> Edit</a>
+      <a href="{% url 'alumnus_delete' alumnus.id %}" class="btn danger"> <span> <i class="fas fa-user-minus"></i></span> Delete</a>
+    </div>
+
+{% else %}
+<section>
+<h1>You don't have access</h1>
+</section>
+{% endif %}
 
 {% endblock %}
+
+
+
+

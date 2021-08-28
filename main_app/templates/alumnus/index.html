@@ -8,16 +8,14 @@
 {% block content %}
 
 <section class="page-header">
-  <h1>Our alumni</h1>
-  
 </section>
 
-<div className="title">
-    <h1> MEET THE TEAM </h1> 
+<div class="title">
+    <h1>OUR ALUMNI</h1> 
      </div>
 <section class="team-container">
      {% for person in alumnus %}
-     <a href="/alumnus/{{person.id}}">View Detail</a>
+     
         <div class="card">
             <div class="team-content">
                 <div class="image">
@@ -31,6 +29,9 @@
                 <div class="socials">
                     <a href="{{person.linkedin}}" target = "_blank" rel="noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
                     <a href="{{person.github}}" target = "_blank" rel="noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
+                </div>
+                <div class="edit">
+                <a href="/alumnus/{{person.id}}">Edit</a>
                 </div>
             </div>
         </div>

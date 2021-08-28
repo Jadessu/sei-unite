@@ -7,8 +7,8 @@ from django.contrib.auth.models import User
 
 
 class Alumnus(models.Model):
-    github = models.CharField(max_length=100)
     name = models.CharField(max_length=100)
+    github = models.CharField(max_length=100)
     linkedin = models.CharField(max_length=100)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
@@ -16,12 +16,12 @@ class Alumnus(models.Model):
         return self.name
 
 class Project(models.Model):
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=100) 
     description = models.TextField(max_length=300)
     image = models.TextField(max_length=200)
     lookingfor = models.TextField(max_length=400)
-    repo = models.TextField(max_length=150)
-    completed = models.BooleanField(default=False)
+    repo = models.TextField('Github Repo', max_length=150)
+    completed = models.BooleanField( default=False, )
     alumnus = models.ForeignKey(Alumnus, on_delete=models.CASCADE)
 
 

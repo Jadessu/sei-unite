@@ -1,3 +1,16 @@
+:root{
+    --dark-color: #0B0C10;
+    --light-dark: #1F2833;
+    --yellow-ish: #C5C6C7;
+    --blue-ish: #66FCF1;
+    --green-ish: #45A29E;
+
+    --main:#0d2f7f;
+    --ascent: #cb9e85;
+    --white: #fff;
+    --button: #0863ce;
+}
+
 .team-container
 {
    display: flex;
@@ -12,8 +25,10 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    background-color: #001a29;
-    color: var(--tt-white)
+    /* background-color: #001a29; */
+    color: var(--white);
+    font-size: 2rem;
+    border-bottom: 2rem solid var(--button);
 
   }
 
@@ -23,9 +38,9 @@
      height: 416px;
      padding: 60px 30px;
      margin: 20px;
-     /* background-color: #001a29;
-     box-shadow: 0.6em 0.6em 0.5em #020d1b;
-     border-radius: 20px; */
+     background-color: var(--white);
+     box-shadow: 0.6em 0.6em 0.5em #00193a;
+     border-radius: 20px;
   }
   
   .card .team-content
@@ -59,7 +74,7 @@
 
  .info h4
  {
-    color: #e0d9f3;
+    color: var(--dark-color);
     font-size: 1.7rem;
     font-weight: bold;
     text-align: center;
@@ -68,7 +83,7 @@
  
  .info h5
  {
-    color: #f0eacb;
+    color: var(--light-dark);
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
@@ -82,7 +97,7 @@
  .socials a
  {
     text-decoration: none;
-    color: #d5ec03;
+    color: var(--main);
     font-size: 30px;
     margin: 10px;
     transition: color 0.4s;
@@ -90,5 +105,13 @@
  
  .socials a:hover
  {
-    color: #ffffff;
+    color: var(--dark-color);
  }
+
+/* .page-header{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: var(--white)
+} */
