@@ -16,12 +16,32 @@
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+    /* background-color: var(--button); */
+    background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000a5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+
+}
+
+
+.header-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    border-bottom: 1rem solid white;
 
 }
 
 .idea h1 {
     color: var(--white);
-    background-color: var(--button);
+    background-color: var(--main);
     
 
 }
@@ -54,6 +74,11 @@
       justify-content: center;
       margin-top: 1rem;
       padding: 0 1rem;
+  }
+
+  .info p{
+      color: var(--white);
+      font-size: 1.1rem;
   }
 
  
@@ -107,6 +132,3 @@
   
   }
 
-
-
- 
