@@ -21,8 +21,8 @@ class Home(LoginView):
 def about(request):
     return render(request, 'about.html')
 
-def projectideas(request):
-  return render(request, projectideas.html)
+def ideas(request):
+  return render(request, 'ideas.html')
 
 # ------------------------------------ALUMNUS---------------------------------------------------------
 def alumnus_index(request):

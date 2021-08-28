@@ -1,0 +1,112 @@
+:root{
+    --dark-color: #0B0C10;
+    --light-dark: #1F2833;
+    --yellow-ish: #C5C6C7;
+    --blue-ish: #66FCF1;
+    --green-ish: #45A29E;
+
+    --main:#0d2f7f;
+    --ascent: #cb9e85;
+    --white: #fff;
+    --button: #0863ce;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.idea h1 {
+    color: var(--white);
+    background-color: var(--button);
+    
+
+}
+
+
+  .idea{
+    width: 500px;
+    /* max-height: 300px; */
+    height: 150px;
+    margin: 1.3rem;
+    background: rgba( 151, 5, 5, 0.00 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+      
+  }
+  .info{
+      align-items: center;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 1rem;
+      padding: 0 1rem;
+  }
+
+ 
+  .idea-container a {
+      text-decoration: none;
+      color:var(--white)
+  }
+
+
+
+.idea-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .idea-info h3{
+      margin: 0;
+  }
+  
+  .idea-info span{
+      background-color: var(--ascent);
+      color: var(--light-dark)
+  }
+
+
+  .overview{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--black);
+    background: var(--white);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    
+    border: 1px solid rgba( 255, 255, 255, 0.18 );  color: white;
+    transform: translateY(102%);
+    transition: transform 0.3s ease-in-out;
+    overflow: auto;
+ 
+  
+  }
+  
+  .idea:hover .overview{
+    transform: translateX(0%);
+    color: var(--black);
+    width: 100%;
+    
+  
+  }
+
+
+
+ 

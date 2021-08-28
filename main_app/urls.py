@@ -3,6 +3,9 @@ from . import views
 urlpatterns = [
     path('', views.Home.as_view(), name="home"),
     path('about/', views.about, name='about'),
+    # ----------------------------------PROJECT IDEAS-----------------------------------------------------
+    path('ideas/', views.ideas, name = 'ideas'),
+
     # ---------------------------------PROJECTS---------------------------------------------------------
     path('projects/', views.projects_index, name='projects_index'),
     path('projects/<int:project_id>/', views.projects_detail, name='projects_detail'),
@@ -23,7 +26,5 @@ urlpatterns = [
     path('accounts/signup/', views.signup, name='signup'),
     # -----------------------------------PHOTO--------------------------------------------------------------
     path('alumnus/<int:alumnus_id>/add_photo/', views.add_photo, name='add_photo'),
-    # ----------------------------------PROJECT IDEAS-----------------------------------------------------
-    path('projectideas/', views.project_ideas, name = 'project_ideas')
-
+    
 ]
