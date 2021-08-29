@@ -1,241 +1,718 @@
-{% extends 'base.html' %}
-{% load static %}
-  {% block head %}
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="{% static 'css/idea.css' %}"
-/>
-{% endblock %} 
+{% extends 'base.html' %} {% load static %} {% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/idea.css' %}" />
+{% endblock %} {% block content %}
 
-{% block content %}
-
-<div class = "header-title">
-<h1>PROJECT IDEAS</h1>
+<div class="header-title">
+  <h1>PROJECT IDEAS</h1>
 </div>
-
 
 <div class="container">
-<div class="idea">
-<div class="title"><h1 id = "first">Rating and Review Application</h1></div>
-<div class="info"> <p>Build a website or mobile app where users can rate and review certain products.</p>
-<p>Examples include Movies: IMDB, Books: Goodreads, Companies: Glassdoor</p>
-</div>
-<div class="overview">
-<h2>Feature Ideas</h2>
-              <ul>
-              <li>Sorting (avg. rating, rating count, etc) and Pagination</li>
-              <li>Additional Product Details.</li>
-              <li>Use a public API to get product details and store them in your DB.</li>
-              </ul>
-</div>
+  <div class="idea">
+    <div class="title"><h1 id="first">Rating and Review Application</h1></div>
+    <div class="info">
+      <p>
+        Build a website or mobile app where users can rate and review certain
+        products.
+      </p>
+      <p>
+        Examples include Movies: IMDB, Books: Goodreads, Companies: Glassdoor
+      </p>
+    </div>
+    <div class="overview">
+      <h2>Feature Ideas</h2>
+      <ul>
+        <li>Sorting (avg. rating, rating count, etc) and Pagination</li>
+        <li>Additional Product Details.</li>
+        <li>
+          Use a public API to get product details and store them in your DB.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="idea">
+    <div class="title"><h1 id="second">OTT (Over-the-top) Platform</h1></div>
+    <div class="info">
+      <p>
+        Create an OTT Platform like Netflix, Amazon Prime Video, Hotstar, etc.
+      </p>
+    </div>
+    <div class="overview">
+      <h2>Ideas:</h2>
+      <ul>
+        <li>You can use Youtube or other free videos on the platform.</li>
+        <li>Add ratings and reviews.</li>
+        <li>You can add movie trailers instead of full videos.</li>
+        <li>Optionally add recommendations.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="idea">
+    <div class="title"><h1 id="third">Real-Time Communication</h1></div>
+    <div class="info">
+      <p>
+        Create a real-time communication tool that can be used for communication
+        or collaboration.
+      </p>
+    </div>
+    <div class="overview">
+      <h2>Ideas:</h2>
+      <ul>
+        <li>Chat (1:1 or Group) like WhatsApp, Telegram, Slack, Discord</li>
+        <li>Video Calling like Zoom, Conference Calls, YouTube Live</li>
+        <li>Interview Collab Tools (Chat, Video, Whiteboard, Editor)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="idea">
+    <div class="title"><h1 id="fourth">QnA Platform</h1></div>
+    <div class="info">
+      <p>
+        A community-driven question and answer platform like Quora,
+        StackOverflow, Reddit, Discourse. etc.
+      </p>
+    </div>
+    <div class="overview">
+      <h2>Ideas:</h2>
+      <ul>
+        <li>Make it unique!</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="idea">
+    <div class="title"><h1 id="fifth">Social Media</h1></div>
+    <div class="info">
+      <p>
+        Build a social media platform like Facebook, Twitter, Instagram, etc.
+      </p>
+    </div>
+    <div class="overview">
+      <h2>Ideas:</h2>
+      <ul>
+        <p>
+          Start with a sharing platform where people can share media (image,
+          video, text, links, etc) with buttons to share them. Example: Product
+          Hunt, Hacker News, early days of Instagram, and Pinterest.
+        </p>
+      </ul>
+    </div>
+  </div>
+
+  <div class="idea">
+    <div class="title"><h1 id="sixth">E-commerce</h1></div>
+    <div class="info">
+      <p>
+        Most of the websites or apps that we interact with are e-commerce
+        platforms. If a website allows you to buy something online, it is an
+        e-commerce website. You can buy hands-on courses from workat.tech which
+        makes this website an e-commerce website as well.
+      </p>
+    </div>
+    <div class="overview">
+      <h2>Examples:</h2>
+      <ul>
+        <li>General Shopping: Amazon, Flipkart</li>
+        <li>Food: Swiggy, Zomato</li>
+        <li>Flight Tickets: MakeMyTrip</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="idea">
+    <div class="title"><h1 id="seventh">Expense/Account Management</h1></div>
+    <div class="info">
+      <p>
+        Build an expense/account management app that hows income, expenses,
+        savings goals, credit score, investments, net worth and categorizes your
+        expenses
+      </p>
+    </div>
+    <div class="overview">
+      <h2>Ideas:</h2>
+      <ul>
+        <li>Personal Expense Management like Walnut</li>
+        <li>Collaborative Expense Management like Splitwise</li>
+        <li>Business Account Management like Khatabook</li>
+      </ul>
+    </div>
+  </div>
+ 
+
+  <div class="idea">
+    <div class="title"><h1 id="eigth">Fantasy Sports</h1></div>
+    <div class="info">
+      <p>
+        Build a Fantasy Sports Application like Dream11 for any sports. This is
+        a fun one. Try to be as creative as possible.
+      </p>
+    </div>
+    <div class="overview">
+      <h2>Examples</h2>
+      <ul>
+        <li>NFL Fantasy Sport</li>
+        <li>Yahoo Fantasy Sports</li>
+        <li>CBS Sports Fantasy</li>
+      </ul>
+    </div>
+  </div>
+  
+
+  <div class="idea">
+    <div class="title"><h1 id="ningth">Project Management</h1></div>
+    <div class="info">
+      <p>
+        Build a project management application like Trello, Jira, etc. This will
+        help you learn a lot about UI design and backend code design.
+      </p>
+    </div>
+    <div class="overview">
+      <h2>Examples</h2>
+      <ul>
+        <li>Trello</li>
+        <li>Jira</li>
+      </ul>
+    </div>
+  </div>
+ 
+
+  <div class="idea">
+    <div class="title"><h1 id="tenth">Algorithm Visualizer</h1></div>
+    <div class="info">
+      <p>
+        This project will generally require you to write a lot of code to create
+        visualizers for different algorithms. Try to create reusable components
+        to do this. This will help you get hands-on with a language and might
+        also help you revise DS/Algo.
+      </p>
+    </div>
+    <div class="overview">
+      <h2>Ideas</h2>
+      <ul>
+        <li>Refer back to your lectures on Big O</li>
+      </ul>
+    </div>
+  </div>
+ 
+
+  <div class="idea">
+    <div class="title"><h1 id="eleventh">Content Management System</h1></div>
+    <div class="info">
+      <p>
+        Build a content management system where anyone can set up their blog.
+      </p>
+    </div>
+    <div class="overview">
+      <h2>Ideas</h2>
+      <ul>
+        <li>
+          Using an MD Editor or a WYSIWYG Editor will make the experience very
+          good.
+        </li>
+        <li>
+          Allowing subscribing and sending newsletters like Substack can make it
+          a great product.
+        </li>
+      </ul>
+    </div>
+  </div>
+ 
+
+  <div class="idea">
+    <div class="title"><h1 id="twelve">Note-taking Application</h1></div>
+    <div class="info">
+      <p>
+        Build a note-taking application similar to Notion, Roam Research, etc.
+        You do not need to add all the functionalities. Just a few core ones and
+        it would be a pretty good project.
+      </p>
+    </div>
+    <div class="overview">
+      <h2>Ideas</h2>
+      <ul>
+        <li>Focus on using libraries that can format notes as code</li>
+        <li>
+          Include a feature for the users to draw or add shapes such as arrows.
+        </li>
+      </ul>
+    </div>
+  </div>
+ 
+  <div class="idea">
+    <div class="title"><h1 id="thirteen">Matchmaking Application</h1></div>
+    <div class="info">
+      <p>
+        Create a matchmaking app (dating, job-search, etc). Idea: Tinder Clone.
+      </p>
+    </div>
+    <div class="overview"></div>
+  </div>
 
 </div>
+<div class="resource-container">
+  <div class="podcast-container">
+  <h1>Podcasts</h1>
 
-<div class="idea">
-<div class="title"><h1 id = "second">OTT (Over-the-top) Platform</h1></div>
-<div class="info"> <p>Create an OTT Platform like Netflix, Amazon Prime Video, Hotstar, etc.</p>
+    <div class="podcasts">
+      <div class="idea">
+        <div class="title">
+          <h1><a href="https://www.codenewbie.org/podcast">CodeNewbie</a></h1>
+        </div>
+        <div class="info">
+          <p>
+            New to this whole developer thing? Here’s a good place to start.
+            CodeNewbie covers stories from people on various coding journeys,
+            from being a frontend developer for 20 years to transitioning from a
+            police recruit to a developer. Prepare to be relaxed and inspired at
+            once.
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <div class="podcasts">
+      <div class="idea">
+        <div class="title">
+          <h1><a href="https://dev.to/devdiscuss">DevDiscuss</a></h1>
+        </div>
+        <div class="info">
+          <p>
+            DevDiscuss is the DEV community’s first original podcast. It’s
+            conversational and covers topics that affect software developers’
+            lives, from productivity tips to the pros and cons of different
+            programming languages, every Tuesday.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="podcasts">
+      <div class="idea">
+        <div class="title">
+          <h1>
+            <a href="https://www.serverlesschats.com/">Serverless Chats</a>
+          </h1>
+        </div>
+        <div class="info">
+          <p>
+            Serverless Chats is all about—you guessed it—everything serverless.
+            Jeremy Daly, serverless advocate and startup veteran, uses this
+            platform to explain how serverless architecture helps your
+            applications run more smoothly and efficiently.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="podcasts">
+      <div class="idea">
+        <div class="title">
+          <h1><a href="https://changelog.com/podcasts">The Changelog</a></h1>
+        </div>
+        <div class="info">
+          <p>
+            These weekly podcasts cover software development, open source,
+            artificial intelligence, and developer culture. Tune in for
+            interesting questions and answers about everything tech. Some recent
+            episodes have discussed observability platforms, highlighted authors
+            in the product space, and explored internet security.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="podcasts">
+      <div class="idea">
+        <div class="title">
+          <h1>
+            <a href="https://spec.fm/podcasts/developer-tea">Developer Tea</a>
+          </h1>
+        </div>
+        <div class="info">
+          <p>
+            What’s the tea? These episodes are short and sweet. Enjoy a
+            10-minute talk about software engineering strategies while sipping
+            your drink of choice—it’s the perfect break.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="youtube">
+  <h1>Youtube</h1>
+    <div class="idea">
+      <div class="title">
+        <h1>
+          <a href="https://www.youtube.com/channel/UCMZFwxv5l-XtKi693qMJptA"
+            >Coding Addict</a
+          >
+        </h1>
+      </div>
+      <div class="info">
+        <p>
+          Are you addicted to coding? It’s OK, we’re here for you. And we won’t
+          tell. Check out this channel for some practical guidance on your
+          projects.
+        </p>
+      </div>
+    </div>
+
+    <div class="idea">
+      <div class="title">
+        <h1>
+          <a href="https://www.youtube.com/c/ProgramWithErik/featured"
+            >Program with Erik</a
+          >
+        </h1>
+      </div>
+      <div class="info">
+        <p>
+          Erik, a web developer for 10 years, films clear and helpful
+          programming tutorials on different frameworks, including trendy new
+          ones: Vue 3, Express JS, and Svelte. He’s incredibly active too,
+          posting at least three videos a week.
+        </p>
+      </div>
+    </div>
+
+    <div class="idea">
+      <div class="title">
+        <h1>
+          <a href="https://www.youtube.com/c/Freecodecamp/featured"
+            >freeCodeCamp</a
+          >
+        </h1>
+      </div>
+      <div class="info">
+        <p>
+          freeCodeCamp is an open source community that posts clear coding
+          tutorials with no advertisements. On top of that, the channel’s
+          projects support nonprofits. I couldn’t NOT give them a shoutout.
+        </p>
+      </div>
+    </div>
+
+    <div class="idea">
+      <div class="title">
+        <h1>
+          <a href="https://www.youtube.com/channel/UCMZFwxv5l-XtKi693qMJptA"
+            >Andy Sterkowitz</a
+          >
+        </h1>
+      </div>
+      <div class="info">
+        <p>
+          Are you addicted to coding? It’s OK, we’re here for you. And we won’t
+          tell. Check out this channel for some practical guidance on your
+          projects.
+        </p>
+      </div>
+    </div>
+
+    <div class="idea">
+      <div class="title">
+        <h1>
+          <a href="https://www.youtube.com/c/AndySterkowitz/featured"
+            >Coding Addict</a
+          >
+        </h1>
+      </div>
+      <div class="info">
+        <p>
+          Andy’s your new best friend. As a self-taught software developer, he
+          knows exactly how to motivate you and help you grow. He reviews
+          programming books, discusses his career path as a developer without a
+          formal degree, and explains how to build a developer portfolio.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="twitter-container">
+    <h1>Twitter</h1>
+    <div class="idea">
+      <div class="title">
+        <h1>
+          <a href="https://twitter.com/kolokodess?lang=en">Ada Nduka Oyom</a>
+        </h1>
+      </div>
+      <div class="info">
+        <p>
+          Ada is a software developer based in Lagos, Nigeria. In her free time,
+          she contributes to the Open Source Community Africa and She Code
+          Africa. Follow her for a daily dose of motivation and career guidance.
+        </p>
+      </div>
+    </div>
+
+    <div class="idea">
+      <div class="title">
+        <h1><a href="https://twitter.com/ThePracticalDev">DEV Community</a></h1>
+      </div>
+      <div class="info">
+        <p>
+          The DEV Community helps developers from around the world collaborate
+          and network. It launched dev.to, the blogging platform, and offers
+          practical tips on creating great software.
+        </p>
+      </div>
+    </div>
+
+    <div class="idea">
+      <div class="title">
+        <h1><a href="https://twitter.com/thenewstack">The New Stack</a></h1>
+      </div>
+      <div class="info">
+        <p>
+          The New Stack is your go-to for building and managing software at
+          scale. They communicate with developers at all levels and they’re an
+          awesome resource whether you’ve been in the field for 10 years or 10
+          months. If you want to keep up with the latest developer news and
+          learn about new technologies, add them.
+        </p>
+      </div>
+    </div>
+
+    <div class="idea">
+      <div class="title">
+        <h1>
+          <a href="https://twitter.com/WriteSpeakCode">Write/Speak/Code</a>
+        </h1>
+      </div>
+      <div class="info">
+        <p>
+          Write/Speak/Code is a nonprofit that helps make the tech world more
+          accessible to people of marginalized genders. It has chapters in major
+          United States tech hubs and hosts virtual workshops that can help you
+          share your technology expertise through effective writing and
+          speaking.
+        </p>
+      </div>
+    </div>
+
+    <div class="idea">
+      <div class="title">
+        <h1>
+          <a href="https://twitter.com/SimpsonsOps">Simpsons Against DevOps</a>
+        </h1>
+      </div>
+      <div class="info">
+        <p>
+          You’re probably familiar with The Simpsons. If you’ve scrolled past
+          the last few suggestions, make sure you check out this brand-new
+          account for some midday laughs.
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="overview">
-<h2>Ideas:</h2>
-              <ul>
-              <li>You can use Youtube or other free videos on the platform.</li>
-              <li>Add ratings and reviews.</li>
-              <li>You can add movie trailers instead of full videos.</li>
-              <li>Optionally add recommendations.</li>
-              </ul>
-</div>
+<h1>THIS IS FOR BOOKS AND WEBSITES</h1>
+<div class="resources2-container">
+  <div class="books-container">
+  <h1>Books</h1>
 
-</div>
+    <div class="idea">
+      <div class="title"><h1>Cracking the Coding Interview</h1></div>
+      <div class="info">
+        <p>
+          Cracking the Code Interview: 189 Programming Questions & Solutions” is
+          highly recommendable to anyone who wants or needs to take coding
+          interviews.Gayle provides you with 189 real interview questions and
+          solutions so you can prepare well for the next coding interview!
+        </p>
+      </div>
+    </div>
 
-<div class="idea">
-<div class="title"><h1 id = "third">Real-Time Communication</h1></div>
-<div class="info"> <p>Create a real-time communication tool that can be used for communication or collaboration.</p>
+    <div class="idea">
+      <div class="title"><h1>Clean Code</h1></div>
+      <div class="info">
+        <p>
+          A Handbook of Agile Software Craftsmanship” by Robert C. Martin, one of the most popular programming books around. It was
+          written to teach software engineers the principles of writing clean
+          programming code. It comes with a lot of examples showing you how to
+          refactor code to be more readable and maintainable.
+        </p>
+      </div>
+    </div>
 
-</div>
-<div class="overview">
-<h2>Ideas:</h2>
-              <ul>
-              <li>Chat (1:1 or Group) like WhatsApp, Telegram, Slack, Discord</li>
-              <li>Video Calling like Zoom, Conference Calls, YouTube Live</li>
-              <li>Interview Collab Tools (Chat, Video, Whiteboard, Editor)</li>
-             
-              </ul>
-</div>
+    <div class="idea">
+      <div class="title"><h1>The Pragmatic Programmer</h1></div>
+      <div class="info">
+        <p>
+          The goal of The Pragmatic Programmer is to teach the core process of
+          software development, including career development, personal
+          responsibility, architectural techniques, and adapting and reusing
+          your code. The book examines the best practices and biggest problems
+          software engineers might face.
+        </p>
+      </div>
+    </div>
 
-</div>
+    <div class="idea">
+      <div class="title"><h1>Introduction to Algorithms</h1></div>
+      <div class="info">
+        <p>
+          “Introduction to Algorithms, Third Edition” by Thomas H. Cormen,
+          Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein is nothing
+          less than an essential guide to algorithms of all kinds. It is very
+          comprehensive and accessible to all kinds of readers, beginners, and
+          professionals alike.
+        </p>
+      </div>
+    </div>
 
-<div class="idea">
-<div class="title"><h1 id = "fourth">QnA Platform</h1></div>
-<div class="info"> <p>A community-driven question and answer platform like Quora, StackOverflow, Reddit, Discourse. etc.</p>
+    <div class="idea">
+      <div class="title"><h1>Don't Make Me Think</h1></div>
+      <div class="info">
+        <p>
+          Krug’s book explains that humans using software or web sites lean
+          toward accepting the first solution that is presented to them, so
+          software engineers should take advantage of this and consider it when
+          it comes to designing. The book focuses on simplicity, brevity, and
+          common sense.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="courses-container">
+  <h1>Free Courses</h1>
+    <div class="idea">
+      <div class="title">
+        <h1>
+          <a
+            href="https://online-learning.harvard.edu/course/cs50-introduction-computer-science?delta=0"
+            >CS50: Intro To Computer Science</a
+          >
+        </h1>
+      </div>
+      <div class="info">
+        <p>
+          This is CS50x , Harvard University's introduction to the intellectual
+          enterprises of computer science and the art of programming for majors
+          and non-majors alike, with or without prior programming experience.
+        </p>
+      </div>
+    </div>
 
-</div>
-<div class="overview">
-<h2>Ideas:</h2>
-              <ul>
-              <li>Make it unique!</li>
-              
-             
-              </ul>
-</div>
+    <div class="idea">
+      <div class="title">
+        <h1>
+          <a
+            href="https://www.edx.org/course/software-development-fundamentals?source=aw&awc=6798_1630254041_76633ee6aec7a3c294aef3b336f0dc73&utm_source=aw&utm_medium=affiliate_partner&utm_content=text-link&utm_term=787739_Best+Choice+Media"
+            >Software Development Fundamentals</a
+          >
+        </h1>
+      </div>
+      <div class="info">
+        <p>
+          If you are ready to dive straight into learning all about software
+          development, this free online course hosted on the edX platform is an
+          excellent place to start. It’s a four-week course that is designed to
+          take between six to eight hours each week, and it’s offered through
+          one of the top colleges in the country: The University of
+          Pennsylvania.
+        </p>
+      </div>
+    </div>
 
-</div>
+    <div class="idea">
+      <div class="title">
+        <h1>
+          <a href="https://www.theodinproject.com/paths/front-end-only"
+            >Web Development</a
+          >
+        </h1>
+      </div>
+      <div class="info">
+        <p>
+          f Web Development interests you, the best place to start may be at The
+          Odin Project. This free and open-source platform was founded in 2013
+          and is maintained by a group of volunteers. The platform provides
+          excellent instruction in programming and development and over a
+          quarter of a million students have taken advantage of this no-cost
+          website for learning web development.
+        </p>
+      </div>
+    </div>
 
+    <div class="idea">
+      <div class="title">
+        <h1>
+          <a
+            href="https://www.coursera.org/learn/software-processes?ranMID=40328&ranEAID=XMuWjHlUEYs&ranSiteID=XMuWjHlUEYs-x03DxASjXTnWP8V9W5c5Mw&siteID=XMuWjHlUEYs-x03DxASjXTnWP8V9W5c5Mw&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=XMuWjHlUEYs"
+            >Software Development Processes and Methodologies</a
+          >
+        </h1>
+      </div>
+      <div class="info">
+        <p>
+          This is a terrific first contact course or refresher for those who are
+          interested in understanding the whole software development process
+          from start to finish. You will explore some of the standard methods in
+          the industry and the pros and cons of each, as well as how teams work
+          together to solve common software development issues.
+        </p>
+      </div>
+    </div>
 
+    <div class="idea">
+      <div class="title">
+        <h1>
+          <a
+            href="https://alison.com/course/diploma-in-software-testing-revised"
+            >Diploma in Software Testing</a
+          >
+        </h1>
+      </div>
+      <div class="info">
+        <p>
+          One of the most vital components of software development is testing,
+          and this free software development course from Alison has you covered.
+          It takes 10 to 15 hours to complete and covers the most important
+          topics when it comes to software testing, starting with a
+          comprehensive overview of the process and progressing into deeper
+          subjects.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="practice-container">
+  <h1>Skill-Practice</h1>
+  <div class="idea">
+  <div class="title"> <h1> <a href="https://www.hackerrank.com/dashboard">HackerRank</a></h1></div>
+  <div class="info"> <p>HackerRank provides challenges for several different domains such as Algorithms, Mathematics, SQL, Functional Programming, AI, and more. You can solve all the challenge directly online. They provide a discussion and leaderboard for every challenge.</p></div>
+  </div>
 
-<div class="idea">
-<div class="title"><h1 id = "fifth">Social Media</h1>
-</div>
-<div class="info"> <p>Build a social media platform like Facebook, Twitter, Instagram, etc.</p>
+  <div class="idea">
+  <div class="title"> <h1> <a href="https://www.topcoder.com/challenges/?pageIndex=1">TopCoder</a></h1></div>
+  <div class="info"> <p>TopCoder is one of the original platforms for competitive programming online. It provides a list of algorithmic challenges from the past that you can complete on your own directly online using their code editor. </p></div>
+  </div>
 
-</div>
-<div class="overview">
-<h2>Ideas:</h2>
-              <ul>
-              <p>Start with a sharing platform where people can share media (image, video, text, links, etc) with buttons to share them. Example: Product Hunt, Hacker News, early days of Instagram, and Pinterest.</p>
-             
-              </ul>
-</div>
-</div>
+  <div class="idea">
+  <div class="title"> <h1> <a href="https://www.codewars.com/">Codewars</a></h1></div>
+  <div class="info"> <p>Codewars provides a large collection of coding challenges submitted and edited by their own community. You can solve the challenges directly online in their editor in one of several languages. You can view a discussion for each challenges as well as user solutions.</p></div>
+  </div>
 
-<div class="idea">
-<div class="title"><h1 id="sixth">E-commerce</h1></div>
-<div class="info"> <p>Most of the websites or apps that we interact with are e-commerce platforms. If a website allows you to buy something online, it is an e-commerce website. You can buy hands-on courses from workat.tech which makes this website an e-commerce website as well.</p>
+  <div class="idea">
+  <div class="title"> <h1> <a href="https://www.coderbyte.com/">Coderbyte</a></h1></div>
+  <div class="info"> <p>Coderbyte provides 200+ coding challenges you can solve directly online in one of 10 programming languages. The challenges range from easy like finding the largest word in a string to hard like print the maximum cardinality matching of a graph.</p></div>
+  </div>
 
-</div>
-<div class="overview">
-<h2>Examples:</h2>
-              <ul>
-              <li>General Shopping: Amazon, Flipkart</li>
-              <li>Food: Swiggy, Zomato</li>
-              <li>Flight Tickets: MakeMyTrip</li>
-             
-              </ul>
-</div>
-
-</div>
-
-<div class="idea">
-<div class="title"><h1 id="seventh">Expense/Account Management</h1></div>
-<div class="info"> <p>Build an expense/account management app that hows income, expenses, savings goals, credit score, investments, net worth and categorizes your expenses</p>
-
-</div>
-<div class="overview">
-<h2>Ideas:</h2>
-              <ul>
-              <li>Personal Expense Management like Walnut</li>
-              <li>Collaborative Expense Management like Splitwise</li>
-              <li>Business Account Management like Khatabook</li>
-             
-              </ul>
-</div>
-
-</div>
-{% comment %} ------------------------------------------------------------------------- {% endcomment %}
-
-<div class="idea">
-<div class="title"><h1 id="eigth">Fantasy Sports</h1></div>
-<div class="info"> <p>Build a Fantasy Sports Application like Dream11 for any sports. This is a fun one. Try to be as creative as possible.</p>
-
-</div>
-<div class="overview">
-<h2>Examples</h2>
-              <ul>
-              <li>NFL Fantasy Sport</li>
-              <li>Yahoo Fantasy Sports</li>
-              <li>CBS Sports Fantasy</li>
-             
-              </ul>
-</div>
-
-</div>
-{% comment %} ------------------------------------------------------------------------- {% endcomment %}
-
-<div class="idea">
-<div class="title"><h1 id="ningth">Project Management</h1></div>
-<div class="info"> <p>Build a project management application like Trello, Jira, etc. This will help you learn a lot about UI design and backend code design.</p>
-
-</div>
-<div class="overview">
-<h2>Examples</h2>
-              <ul>
-              <li>Trello</li>
-              <li>Jira</li>
-              
-             
-              </ul>
-</div>
-
-</div>
-{% comment %} ------------------------------------------------------------------------- {% endcomment %}
-
-<div class="idea">
-<div class="title"><h1 id = "tenth">Algorithm Visualizer</h1></div>
-<div class="info"> <p>This project will generally require you to write a lot of code to create visualizers for different algorithms. Try to create reusable components to do this. This will help you get hands-on with a language and might also help you revise DS/Algo.</p>
-
-</div>
-<div class="overview">
-<h2>Ideas</h2>
-              <ul>
-              <li>Refer back to your lectures on Big O</li>
-              
-             
-              </ul>
-</div>
-
-</div>
-{% comment %} ------------------------------------------------------------------------- {% endcomment %}
-
-<div class="idea">
-<div class="title"><h1 id = "eleventh">Content Management System</h1></div>
-<div class="info"> <p>Build a content management system where anyone can set up their blog.</p>
-
-</div>
-<div class="overview">
-<h2>Ideas</h2>
-              <ul>
-              <li>Using an MD Editor or a WYSIWYG Editor will make the experience very good.</li>
-              <li>Allowing subscribing and sending newsletters like Substack can make it a great product.</li>
-              
-             
-              </ul>
-</div>
-
-</div>
-{% comment %} ------------------------------------------------------------------------- {% endcomment %}
+  <div class="idea">
+  <div class="title"> <h1> <a href="http://www.csszengarden.com/">CSS Zen Garden</a></h1></div>
+  <div class="info"> <p>My personal favorite. The Zen Garden aims to excite, inspire, and encourage participation. To begin, view some of the existing designs in the list. Clicking on any one will load the style sheet into this very page. You recieve an HTML document and it is your job to style it however you want to meet the requirements of the final prodcut provides to you.</p></div>
+  </div>
 
 
-<div class="idea">
-<div class="title"><h1 id = "twelve">Note-taking Application</h1></div>
-<div class="info"> <p>Build a note-taking application similar to Notion, Roam Research, etc. You do not need to add all the functionalities. Just a few core ones and it would be a pretty good project.</p>
 
-</div>
-<div class="overview">
-<h2>Ideas</h2>
-              <ul>
-              <li>Focus on using libraries that can format notes as code</li>
-              <li>Include a feature for the users to draw or add shapes such as arrows.</li>
-              
-             
-              </ul>
-</div>
 
-</div>
-{% comment %} ------------------------------------------------------------------------- {% endcomment %}
 
-<div class="idea">
-<div class="title"><h1 id = "thirteen">Matchmaking Application</h1></div>
-<div class="info"> <p>Create a matchmaking app (dating, job-search, etc). Idea: Tinder Clone.</p>
 
-</div>
-<div class="overview">
-
-</div>
-
-</div>
-{% comment %} ------------------------------------------------------------------------- {% endcomment %}
-
+  </div>
 </div>
 
 {% endblock %}

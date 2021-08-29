@@ -132,3 +132,16 @@ background: linear-gradient(to right, #004e92, #000a5e); /* W3C, IE 10+/ Edge, F
   
   }
 
+.resources{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resource-container{
+    display: flex;
+    
+}
+
+.resources2-container{
+    display: flex;
+}
