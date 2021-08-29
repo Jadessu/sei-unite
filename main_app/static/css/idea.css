@@ -35,7 +35,7 @@ background: linear-gradient(to right, #004e92, #000a5e); /* W3C, IE 10+/ Edge, F
     font-weight: bold;
     font-size: 1.5rem;
     margin-top: 2rem;
-    border-bottom: 1rem solid white;
+    border-bottom: 2rem solid white;
 
 }
 
@@ -132,6 +132,17 @@ background: linear-gradient(to right, #004e92, #000a5e); /* W3C, IE 10+/ Edge, F
   
   }
 
+  .resources-title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 1rem;
+  }
+
 .resources{
     display: flex;
     flex-wrap: wrap;
@@ -139,9 +150,38 @@ background: linear-gradient(to right, #004e92, #000a5e); /* W3C, IE 10+/ Edge, F
 
 .resource-container{
     display: flex;
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin-top: 2rem;
+border-top: 2rem solid var(--white);
+
     
 }
 
 .resources2-container{
     display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.podcast-container, .youtube, .twitter-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-title h1{
+    color: var(--white);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--white);
+    margin-top: 2rem;
+    
+   
+}
+
+.title a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--white)
 }
