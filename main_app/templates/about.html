@@ -1,13 +1,151 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}"/>
+{% endblock %}
 
 {% block content %}
+<div class="unit1">
+<section>
+  <!--for demo wrap-->
+  <h1>Unit 1</h1>
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th>Engineer</th>
+          <th>Project</th>
+          <th>Github</th>
+         
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+        <tr>
+          <td>Christine</td>
+          <td> <h2><a href="https://christinew2-tetris.netlify.app/">Tetris</a></h2> </td>
+          <td><h2><a href="https://github.com/christinew2/unit-1-project/blob/main/js/pseudocode.js"><i class="fas fa-code-branch"></i>Tetris</a></h2></td>
+          
+        </tr>
+        <tr>
+          <td>Dylan</td>
+          <td><h2><a href="https://hammer-yahtzee.netlify.app/">Yahtzee</a></h2></td>
+          <td><h2><a href=""><i class="fas fa-code-branch"></i>Yahtzee</a></h2></td>
+          
+        </tr>
+        <tr>
+          <td>Gerardo</td>
+          <td><h2><a href="https://focused-jennings-1f0f30.netlify.app/">Focused-Jennings</a></h2></td>
+          <td><h2><a href="https://github.com/geedtd/ConnectFour"><i class="fas fa-code-branch"></i>Focused-Jennings</a></h2></td>
+          
+        </tr>
+        <tr>
+          <td>Ian</td>
+          <td><h2><a href="https://hanafuda-sakura.netlify.app/">Hanafuda</a></h2></td>
+          <td><h2><a href="https://github.com/teradaian/hanafuda"><i class="fas fa-code-branch"></i>Hanafuda</a></h2></td>
+          
+        </tr>
+        <tr>
+          <td>Jimmy</td>
+          <td><h2><a href="https://jeblackjack.netlify.app/">Blackjack</a></h2> </td>
+          <td><h2><a href="https://github.com/JImmyJImmy0/blackjack-project"><i class="fas fa-code-branch"></i>Blackjack</a></h2></td>
+          
+        </tr>
+        <tr>
+          <td>John</td>
+          <td><h2><a href="https://jumble-hunt.netlify.app/">Jumble Hunt</a></h2></td>
+          <td><h2><a href="https://github.com/JohnnyMohawk/jumble-hunt-game"><i class="fas fa-code-branch"></i>Jumble Hunt</a></h2></td>
+          
+        </tr>
+        <tr>
+          <td>Jon</td>
+          <td><h2><a href="https://raptorgame.netlify.app/">Raptor</a></h2></td>
+          <td><h2><a href="https://github.com/jonathanherman1/raptor/blob/main/plan.md"><i class="fas fa-code-branch"></i></a></h2></td>
+          
+        </tr>
+        <tr>
+          <td>Junior</td>
+          <td><h2><a href="https://sytycc.netlify.app/">SYTYCC</a></h2></td>
+          <td><h2><a href="https://github.com/Jadessu/Project-Quiz-Game"><i class="fas fa-code-branch"></i>SYTYCC</a></h2></td>
+          
+        </tr>
+        <tr>
+          <td>Rose</td>
+          <td><h2><a href="https://adventurebg.rosieahill.com/">AdventureBG</a></h2></td>
+          <td><h2><a href="https://github.com/RoseAHill/adventure-board-game"><i class="fas fa-code-branch"></i>AdventureBG</a></h2></td>
+          
+        </tr>
+        <tr>
+          <td>Shu</td>
+          <td><h2><a href="https://shu-minesweeper-game.netlify.app/">Minesweeper</a></h2></td>
+          <td><h2><a href="https://github.com/shu-hu/project-1-minesweeper"><i class="fas fa-code-branch"></i>Minesweeper</a></h2></td>
+          
+        </tr>
+        <tr>
+          <td>SJ</td>
+          <td><h2><a href="https://sj-madlibs.netlify.app/">Madlibs</a></h2></td>
+          <td><h2><a href="https://github.com/sarahgaled/unit-1-project"><i class="fas fa-code-branch"></i>Madlibs</a></h2></td>
+          
+        </tr>
+        <tr>
+          <td>Summer</td>
+          <td><h2><a href="https://summerxing-unit1.netlify.app/">Memory Game</a></h2></td>
+          <td><h2><a href="https://github.com/SummerXiX/unit1project"><i class="fas fa-code-branch"></i>Memory Game</a></h2></td>
+          
+        </tr>
+        <tr>
+          <td>Victor</td>
+          <td><h2><a href="https://epic-lichterman-354b9a.netlify.app/">Epic Lichterman</a></h2> </td>
+          <td><h2><a href="https://github.com/vzarate-94/Project-1-Quiz-Game"><i class="fas fa-code-branch"></i>Epic Lichterman</a></h2></td>
+          
+        </tr>
+        <tr>
+          <td>Witte</td>
+          <td><h2><a href="https://snakereturns.netlify.app/">Snake Returns</a></h2></td>
+          <td><h2><a href="https://github.com/jwcrosby/snake"><i class="fas fa-code-branch"></i>Snake Returns</a></h2></td>
+          
+        </tr>
+        <tr>
+          <td>Yoni</td>
+          <td><h2><a href="https://yoni-minesweeper.netlify.app/">Minesweeper</a></h2></td>
+          <td><h2><a href="https://github.com/yoni1994/unit-1-project"><i class="fas fa-code-branch"></i>Minesweeper</a></h2></td>
+          
+        </tr>
+        <tr>
+          <td>Zach</td>
+          <td><h2><a href="https://trivia-mania.netlify.app/">Trivia Mania</a></h2></td>
+          <td><h2><a href="https://github.com/zmar0519/unit-1-project"><i class="fas fa-code-branch"></i>Trivia Mania</a></h2></td>
+          
+        </tr>
+        
+        
+        
+       
+        
+        
+       
+        
+        
+        
+        
+        
+        
+        
+       
+        
+      </tbody>
+    </table>
+  </div>
+</section>
 
-<h1>About the Cat Collector</h1>
-<hr />
-<p>
-  I like long romantic walks down the produce aisle. Also, I am currently job seeking!
+</div>
 
 
-</p>
+
+
 
 {% endblock %}
