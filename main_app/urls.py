@@ -4,7 +4,7 @@ urlpatterns = [
     path('', views.Home.as_view(), name="home"),
     path('about/', views.about, name='about'),
     # ----------------------------------PROJECT IDEAS-----------------------------------------------------
-    path('ideas/', views.ideas, name = 'ideas'),
+    path('ideas/', views.ideas, name ='ideas'),
 
     # ---------------------------------PROJECTS---------------------------------------------------------
     path('projects/', views.projects_index, name='projects_index'),
