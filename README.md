@@ -8,7 +8,7 @@
 
 SEI Unite is a full-stack django where users can add projects they are working on and other users can reach out and collaborate as a group . 
 
-- Note: This app was creating with software engineering users in mind.
+- Note: This app was created with software engineering users in mind.
 
 
 ## Features
@@ -17,7 +17,7 @@ SEI Unite is a full-stack django where users can add projects they are working o
 - Users can add projects, the projects github repo, a banner image, the completion status, and what they need help with.
 - Users can view other projects and reach out to the owner
 - Completion Status of the project can be updated and the project can be deleted.
-- User can ann themselves as an alumnus of SEI and view other users that have added themselves.
+- User can add themselves as an alumnus of SEI and view other users that have added themselves.
 
 ## Tech
 
@@ -45,13 +45,16 @@ SEI Unite is a full-stack django where users can add projects they are working o
 
 ### Sites used for help.
 -[CSS-Tricks](https://css-tricks.com/position-sticky-and-table-headers/) - Guide on fixed table headers.
--[StackOverflow](https://stackoverflow.com/questions/19559197/how-to-make-scrollable-table-with-fixed-headers-using-css)- Guide on scrollable table with fixed headers. Coe used in templates/about.html and templates/idea.html
+
+<br>
+-[StackOverflow](https://stackoverflow.com/questions/19559197/how-to-make-scrollable-table-with-fixed-headers-using-css)- Guide on scrollable table with fixed headers. Code used in templates/about.html and templates/idea.html
 
 
 ### Colors.
 - [Coolors](https://www.coolors.co/) - Color Research. 
 <br>
-### Website Color Pallete
+
+### Theme and Palette
 
 ![](main_app/static/img/palette1.jpg)
 ![](main_app/static/img/color-palette1.jpg)
