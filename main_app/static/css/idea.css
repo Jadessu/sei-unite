@@ -177,6 +177,8 @@ background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Ch
 background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 margin-top: 2rem;
 border-top: 2rem solid var(--white);
+flex-wrap: wrap;
+justify-content: center;
 
     
 }
@@ -184,6 +186,7 @@ border-top: 2rem solid var(--white);
 
 .resources2-container{
     display: flex;
+    justify-content: center;
     text-align: center;
     align-items: center;
     margin-top: 2rem;
@@ -191,6 +194,7 @@ border-top: 2rem solid var(--white);
 background: #6441A5;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #2a0845, #271647);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #2a0845, #361f61); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+flex-wrap: wrap;
 
 
 
