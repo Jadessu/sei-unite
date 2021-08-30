@@ -47,7 +47,10 @@ SEI Unite is a full-stack django where users can add projects they are working o
 -[CSS-Tricks](https://css-tricks.com/position-sticky-and-table-headers/) - Guide on fixed table headers.
 
 <br>
--[StackOverflow](https://stackoverflow.com/questions/19559197/how-to-make-scrollable-table-with-fixed-headers-using-css)- Guide on scrollable table with fixed headers. Code used in templates/about.html and templates/idea.html
+
+
+-[StackOverflow]- Guide on scrollable table with fixed headers. Code used in templates/about.html and templates/idea.html
+
 
 
 ### Colors.

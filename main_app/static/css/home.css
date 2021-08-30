@@ -260,3 +260,14 @@ input[name="password2"]{
         margin: 50px;
     }
   }
+
+  @media screen and (min-width: 1400px) {
+  .contentBx{
+      
+  }
+
+  .imgBx{
+      margin-top: 3rem;
+  }
+}
+
