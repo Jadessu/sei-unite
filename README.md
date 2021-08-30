@@ -2,7 +2,8 @@
 ## A Full-stack Django App
 
 
-![](Images/logowf.jpg)
+![](main_app/static/img/banner.jpg)
+
 
 [SEI Unite WEBSITE](https://sei-unite.herokuapp.com/)
 
@@ -35,6 +36,7 @@ SEI Unite is a full-stack django where users can add projects they are working o
 - [ICONS8](https://icons8.com/) - Download design elements for free: icons, photos, vector illustrations, and music for your videos.
 - [uiGradients](https://uigradients.com/#Venice) - A handpicked collection of beautiful color gradients for designers and developers​.
 - [fontawesome](https://fontawesome.com) - A font and icon toolkit based on CSS and less.
+ - [Logo SVG](https://fontawesome.com/v5.15/icons/users?style=solid)
 
 ### Resources Info
 - [Newrelic](https://newrelic.com/blog/nerd-life/developer-resources-roundup) - List of developers resources
@@ -96,6 +98,8 @@ The Alumni section includes 2 links, _View Alumni_ and _Add Alumnus_
 - Add alumnus will present the user with a form where they can add themselves as an alumnus on the alumnia page.
     
 
+# Model
+![](main_app/static/img/models.png)
 
 
  # WIREFRAME

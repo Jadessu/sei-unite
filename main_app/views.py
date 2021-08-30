@@ -30,8 +30,7 @@ def alumnus_index(request):
     return render(request, 'alumnus/index.html', {'alumnus': alumnus})
 
 def alumnus_detail(request, alumnus_id):
-    alumnus = Alumnus.objects.get(id=alumnus_id)
-    
+    alumnus = Alumnus.objects.get(id=alumnus_id)  
     return render(request, 'alumnus/detail.html', {'alumnus': alumnus})
 
 class AlumnusCreate(CreateView):
@@ -39,7 +38,6 @@ class AlumnusCreate(CreateView):
     fields = '__all__'
     success_url = '/alumnus/'
     
-
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super().form_valid(form)
@@ -55,7 +53,6 @@ class AlumnusDelete(DeleteView):
 # ------------------------------------PROJECTS----------------------------------------------------------
 def projects_index(request):
     projects = Project.objects.all()
-    
     return render(request, 'projects/index.html', {'projects': projects} )
 
 def myprojects_index(request):
@@ -74,7 +71,6 @@ class ProjectCreate(CreateView):
     fields = '__all__'
     success_url = '/projects/'
 
-
     def form_valid(self, form):
         alumnus = Alumnus.objects.get(user=self.request.user)
         print(self.request.user)
@@ -86,7 +82,6 @@ class ProjectUpdate(UpdateView):
     fields = ['completed', 'image', 'lookingfor']
     success_url = '/projects/'
    
-
 class ProjectDelete(DeleteView):
     model = Project
     success_url = '/projects/'
