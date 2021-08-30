@@ -30,6 +30,10 @@ body{
     
     padding: 0 6rem;
 } */
+
+.logo h1{
+    font-size: 2.5rem;
+}
 .bar{
     height: 2rem;
     width: 100%;

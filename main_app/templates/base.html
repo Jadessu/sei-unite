@@ -12,7 +12,7 @@
     href=""
   >
   <title>SEI-Unite</title>
-      <link type="text/css" rel="stylesheet" href="{% static 'materialize/bin/materialize.css' %}"  media="screen,projection"/>
+      
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -57,7 +57,7 @@
     </li>
         <li><a href="{% url 'ideas' %}">Resources</a></li>
     <li><a href="{% url 'about' %}">About Us</a></li>
-    <li><a href="{% url 'logout' %}">Log out</a></li>
+    <li><a href="{% url 'logout' %}">Log out <span class="logout"><i class="fas fa-sign-out-alt"></i></span> </a></li>
     {% else %}
         <li><a href="{% url 'home' %}">Home</a></li>
         <li><a href="{% url 'ideas' %}">Resources</a></li>

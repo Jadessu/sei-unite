@@ -1,17 +1,27 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}"/>
+{% endblock %}
+
 {% block content %}
 
+<div class="confirm-delete">
 <div class="page-header">
   <h1>Delete Project?</h1>
 <img src="" alt="">
 </div>
+<div class="sure">
 <h2>Are you sure you want to delete {{ object.title }}?</h2>
+<div class="warning">
+<h3> <span class="warning"><i class="fas fa-exclamation-triangle"></i></span> THIS ACTION CANNOT BE UNDONE</h3>
+</div>
+</div>
 
 <form action="" method="POST" class="form">
   {% csrf_token %}
-  <a 
+  <a  class = "back"
     href="{% url 'projects_detail' project.id %}" 
     class="btn secondary"
   >
@@ -19,5 +29,6 @@
   </a>
   <button type="submit" class="btn danger">Yes - Delete!</button>
 </form>
+</div>
 
 {% endblock %}

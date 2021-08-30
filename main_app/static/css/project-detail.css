@@ -124,3 +124,32 @@ border-top: 3px solid #025aa5;
  input[type='checkbox' i]{
      font-size: 2rem;
  }
+ .project-actions{
+   z-index: 2;
+   color: black;
+   margin-top: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+ .suggestion{
+   margin-top: 2rem;
+ }
+ 
+ .help-button .btn{
+   margin-top: 2rem;
+ }
+ .btn{
+    font-size: var(--font-l);
+    padding: 8px 16px;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid;
+    text-decoration: none;
+    background-color: var(--button-bg);
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    margin-right: 10px;
+ }

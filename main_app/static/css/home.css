@@ -206,7 +206,32 @@ input{
     margin-bottom: 10px;
 }
 
+.affirmations{
+    color: rgb(202, 196, 196);
+}
+.affirmations h1{
+    margin: 5px;
+}
 
+input[name="username"]{
+  
+  
+  color: white;
+  
+}
+input[name="password1"]{
+  color: white;
+  
+}
+input[name="password2"]{
+ 
+  color: white;
+  
+}
+
+.affirmation-title{
+    color: var(--white);
+}
 
    @media (max-width: 768px)
    {

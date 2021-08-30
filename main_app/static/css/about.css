@@ -70,6 +70,9 @@ td a{
     display: flex;
     display: inline-block;
     border-radius: 1rem;
+    min-width: 400px;
+    
+    word-wrap: break-word;
 }
     
 .project-box h1{
@@ -79,6 +82,7 @@ td a{
 .menbers{
     display: flex;
     margin: 1rem;
+    word-wrap: break-word;
 }
 .menbers h3{
     margin: 1rem;
@@ -88,18 +92,18 @@ td a{
 }
 .links{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 2rem;
 }
 .far, .fab{
     color: var(--white)
 }
-.far{
+/* .far{
     padding-left: 10rem;
 }
 .fab{
     padding-right: 10rem;
-}
+} */
 
 .unit3{
     color: var(--white);

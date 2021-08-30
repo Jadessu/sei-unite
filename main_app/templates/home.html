@@ -13,17 +13,23 @@
   <div class="imgBx">
 {% comment %} <img src="{% static 'img/teamwork.jpg' %}" alt=""> {% endcomment %}
 
-{% comment %} 
- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_lwubnwbl.json"  background="transparent"  speed="0.8"  style="width: 850px; height: 850px;"  loop controls autoplay></lottie-player>  {% endcomment %}
+{% if not user.is_authenticated %}
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_lwubnwbl.json"  background="transparent"  speed="0.6"  style="width: 850px; height: 850px;"  loop  autoplay></lottie-player>  
+
+{%else %}
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_DyXIVc.json"  background="transparent"  speed="1"  style="width: 850px; height: 850px;"  loop  autoplay></lottie-player>
+{% endif%}
 
   </div>
   <div class="contentBx">
   <div class="formBx">
-  <h2>Login</h2>
 {% if not user.is_authenticated %}
+  <h2>Login</h2>
   
-    <form action="{% url 'home' %}" method="post" class="login">
+    <form action="{% url 'home' %}" method="post" class="login" autocomple="off">
      
       {% csrf_token %}
       <div class="inputBx">
@@ -34,11 +40,24 @@
       <button type="submit" class="login-submit">Login</button>
       </div>
     </form>
- 
-{% endif %}
+
 <div class="inputBx">
 <p class="sign-up-link">Don't have an account? <a href="{% url 'signup' %}">Sign Up</a></p>
 </div>
+    {% else %}
+    <div class="affirmation-title">
+    <h1>TAKE A DEEP BREATH AND REPEAT.</h1>
+    </div>
+    <div class="affirmations">
+    <h1>I always find the right code for the program.</h1>
+    <h1>Every day, writing innovative code is easier and easier for me.</h1>
+    <h1>I get great ideas with little effort.</h1>
+    <h1>My creativity flows from me like a river.</h1>
+    <br>
+    <h2>I got this.</h2>
+    </div>
+ 
+{% endif %}
   </div>
   </div>
 </div>

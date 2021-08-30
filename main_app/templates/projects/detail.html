@@ -76,7 +76,7 @@
                 <span class="fa fa-star-o"></span>
                     {% comment %} <button class="btn">Start<span class="fa fa-long-arrow-right"></span></button> {% endcomment %}
             </div>
-            {% if project.completed%}
+            {% if not project.completed%}
             <div class="help">
             
             <h1>HELP NEEDED:</h1>
@@ -86,6 +86,7 @@
             <p>
             {{project.lookingfor}}
             </p>
+            
             <h2>If you are interested in being a part of this project, please reach out to <a href="/alumnus/{{alumnus.id}}"> {{project.alumnus}}</a></h2>
             </div>
             </div>
@@ -100,23 +101,22 @@
 
             <div class="suggestion">
             <p>If you can think of any extra features that could improve this project, reach out to the owner and let them know!</p>
-            <div class="help-button">
-            <button>{{project.repo}}</button>
-            </div>
+            
             </div>
             {% endif%}
-            <div class="lottie">
+            <div class="project-actions">
+      <a href="{% url 'projects_update' project.id %}" class="btn warn">Edit</a>
+      <a href="{% url 'projects_delete' project.id %}" class="btn danger">Delete</a>
+    </div>
+           
             
+           
             </div>
-            </div>
-            <div>
             
-            </div>
-            <div>
-            
-            </div>
+           
             </div>
         </div>
+        
         </div>
 
 {% endblock %}
