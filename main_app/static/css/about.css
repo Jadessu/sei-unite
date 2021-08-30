@@ -13,7 +13,7 @@
 
 
 
-h1{
+.unit2 h1, .unit1 h1{
   font-size: 30px;
   color: #fff;
   text-transform: uppercase;
@@ -65,6 +65,157 @@ td a{
     margin-right: 1rem;
 }
 
+.project-box{
+    border: 1px solid var(--white);
+    display: flex;
+    display: inline-block;
+    border-radius: 1rem;
+}
+    
+.project-box h1{
+    color: var(--white);
+    font-size: 3rem;
+}
+.menbers{
+    display: flex;
+    margin: 1rem;
+}
+.menbers h3{
+    margin: 1rem;
+}
+.info h2, h3{
+    color: whitesmoke
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+.far, .fab{
+    color: var(--white)
+}
+.far{
+    padding-left: 10rem;
+}
+.fab{
+    padding-right: 10rem;
+}
+
+.unit3{
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+ 
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.group-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+}
+.project-box{
+    margin: 2rem;
+    
+}
+
+.imgBox{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: 
+    linear-gradient(to bottom, rgba(3, 11, 54, 0.781), rgba(20, 1, 37, 0.73)),
+    url("/static/img/partyfowl.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.imgBox2{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: 
+   
+    url("/static/img/capitalgains.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgBox3{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: 
+    linear-gradient(to bottom, rgba(3, 11, 54, 0.781), rgba(20, 1, 37, 0.73)),
+    url("/static/img/unleash.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgBox4{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: 
+    linear-gradient(to bottom, rgba(3, 11, 54, 0.781), rgba(20, 1, 37, 0.73)),
+    url("/static/img/we-travel.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgBox5{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: 
+    linear-gradient(to bottom, rgba(3, 11, 54, 0.781), rgba(20, 1, 37, 0.73)),
+    url("/static/img/pathways.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.imgBox img{
+    max-width: 100%;
+    filter: blur(2px);
+}
+
+.imgBox2 img{
+    max-width: 100%;
+}
+.project-box .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
 /* demo styles */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
