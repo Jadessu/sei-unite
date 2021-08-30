@@ -55,13 +55,13 @@
         <li><a href="{% url 'alumnus_create'%}">Add Alumnus</a></li>
     </ul>
     </li>
-        <li><a href="{% url 'ideas' %}">Resources</a></li>
-    <li><a href="{% url 'about' %}">About Us</a></li>
+        {% comment %} <li><a href="{% url 'ideas' %}">Resources</a></li> {% endcomment %}
+    {% comment %} <li><a href="{% url 'about' %}">About Us</a></li> {% endcomment %}
     <li><a href="{% url 'logout' %}">Log out <span class="logout"><i class="fas fa-sign-out-alt"></i></span> </a></li>
     {% else %}
         <li><a href="{% url 'home' %}">Home</a></li>
-        <li><a href="{% url 'ideas' %}">Resources</a></li>
-        <li><a href="{% url 'about' %}">About Us</a></li>
+        {% comment %} <li><a href="{% url 'ideas' %}">Resources</a></li> {% endcomment %}
+        {% comment %} <li><a href="{% url 'about' %}">About Us</a></li> {% endcomment %}
         <li><a href="{% url 'signup' %}">Sign Up</a></li>
 
 {% endif%}
