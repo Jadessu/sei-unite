@@ -45,6 +45,12 @@ SEI Unite is a full-stack django where users can add projects they are working o
 - [Onlinecoursereport](https://www.onlinecoursereport.com/free/software-development/) - Statistics on top free online courses for developers
 -[Freecodecamp](https://www.freecodecamp.org/news/the-10-most-popular-coding-challenge-websites-of-2016-fb8a5672d22f/) - List of coding challenge websites.
 
+### Lottie files and images.
+- [ Team work Lottie animation](https://lottiefiles.com/67523-teamwork-lottie-animation) - By S M Rony
+- [Levitate Meditate Peace and Love](https://lottiefiles.com/9626-levitate-meditate-peace-and-love) - By My SOS Family
+- [LOGIN](https://lottiefiles.com/53395-login) - By Hassein Niazi
+- [Team work](https://unsplash.com/photos/MChSQHxGZrQ) - By Annie Spratt
+
 ### Sites used for help.
 -[CSS-Tricks](https://css-tricks.com/position-sticky-and-table-headers/) - Guide on fixed table headers.
 
